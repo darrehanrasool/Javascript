@@ -13,7 +13,7 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
-// Variable name conventions in javascript 
+// Variable name conventions in javascript programing language
 let jonas_matilda = "JM";
 let profileName="Rehan"
 let $function = 27;
@@ -29,13 +29,24 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 console.log(myFirstJob);
-
-// Data Types in javascript 
+//in javascript we have values a value can be either object or primitive.if a value is not object then only its primitive.
+let me={
+name:"rehan"}; javascript variable object
+let age =15;
+let profile='rehan'; primitive data type 
+// Primitive Data Types in javascript  
+1)number data type ie let x=2; let b=7.8;
+2)string data type ie "rehan"
+3)bolean data type ie true, false
+4)undefined data type ie let address;
+5)null data type ie let address=null;
+6)bigInt data type let salary=652675346712354;
+8)symbol data type it returns unique symbol value
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
 // console.log(typeof true);
-console.log(typeof javascriptIsFun);
+// console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
 // console.log(typeof 'Jonas');
 
@@ -49,23 +60,25 @@ console.log(typeof year);
 year = 1991;
 console.log(typeof year);
 
-console.log(typeof null);
+console.log(typeof null);there is a bug in javascript it should return null,it returns object,as null is not an object 
 // creating variables via different keywoards in javascript programing language ie let const var
 // let, const and var
+// we can mutate the variable value later 
 let age = 30;
 age = 31;
-
+// we cant mutate the variable value later
 const birthYear = 1991;
 // birthYear = 1990;
 // const job;
-
+// old way of creating variable legacy reason to kept it here
+// we can mutate the variable value later
 var job = 'programmer';
 job = 'teacher'
 
 lastName = 'Schmedtmann';
 console.log(lastName);
 
-// operators in javascript 
+// operators in javascript programing language
 // Basic operators
 // Math operators
 const now = 2037;
@@ -99,7 +112,8 @@ const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
  
-// Operator Precedence in javascript
+// Operator Precedence in javascript programing language
+
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -112,6 +126,7 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+
 */
 // Coding Challenge #1
 
@@ -145,7 +160,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
-// Strings and Template Literals in javascript
+// Strings and Template Literals in javascript programing language
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
