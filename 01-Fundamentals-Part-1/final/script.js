@@ -1,23 +1,23 @@
 /*
-////////////////////////////////////
-// Linking a JavaScript File
+// Linking a External Javascript File
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
-
-////////////////////////////////////
-// Values and Variables
+// Values and Variables  in javascript programing language
+// value is the smalest unit in programing lingo
 console.log("Jonas");
 console.log(23);
 
 let firstName = "Matilda";
-
+// reusablity
 console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
-// Variable name conventions
+// Variable name conventions in javascript 
 let jonas_matilda = "JM";
+let profileName="Rehan"
 let $function = 27;
+let _rehan="underscore"
 
 let person = "jonas";
 let PI = 3.1415;
@@ -30,8 +30,7 @@ let job2 = "teacher";
 
 console.log(myFirstJob);
 
-////////////////////////////////////
-// Data Types
+// Data Types in javascript 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -51,8 +50,7 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
-
-////////////////////////////////////
+// creating variables via different keywoards in javascript programing language ie let const var
 // let, const and var
 let age = 30;
 age = 31;
@@ -67,8 +65,8 @@ job = 'teacher'
 lastName = 'Schmedtmann';
 console.log(lastName);
 
-////////////////////////////////////
-// Basic Operators
+// operators in javascript 
+// Basic operators
 // Math operators
 const now = 2037;
 const ageJonas = now - 1991;
@@ -76,31 +74,32 @@ const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
 
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
-// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2 exponetiation
 
+// string concatination
 const firstName = 'Jonas';
 const lastName = 'Schmedtmann';
 console.log(firstName + ' ' + lastName);
 
-// Assignment operators
+// Assignment operators in javascript 
 let x = 10 + 5; // 15
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x * 4 = 100
-x++; // x = x + 1
-x--;
-x--;
+x++; //post increament
+x--; //post decrement
+++x: //pre increment
+--X: //pre decrement
 console.log(x);
 
-// Comparison operators
+// Comparison operators in javascript
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
-
-////////////////////////////////////
-// Operator Precedence
+ 
+// Operator Precedence in javascript
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -114,8 +113,6 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
-
-////////////////////////////////////
 // Coding Challenge #1
 
 /*
@@ -148,8 +145,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
-////////////////////////////////////
-// Strings and Template Literals
+// Strings and Template Literals in javascript
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
