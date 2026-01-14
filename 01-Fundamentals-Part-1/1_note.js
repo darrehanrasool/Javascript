@@ -5,7 +5,7 @@ javascript is a highlevel ,object oriented, multi paradigm prgraming language
 High Level : Actually we don't have to worry about complex memory management system like microprocessor
 Object oriented : its based on objects
 Multi paradigm : we can use different style of programing ie monolithic,imparative,declarative programing style
-HTML for Markup layout of website <p></p> Noun
+HTML for Markup layout of website <p> </p> Noun
 CSS for styling the website p{color:red}  Adjective
 Javascript for funtionality p.hide().     Verbs
 javascript allows us to add dynamic effects to the websites ie spinner of twiter
