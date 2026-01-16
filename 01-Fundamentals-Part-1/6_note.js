@@ -21,11 +21,13 @@ console.log(firstName + " " + lastName);
 //++x: //pre increment
 //--X: //pre decrement
 console.log(x);
+
 // Comparison operators in javascript
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
+
 // Operator Precedence in javascript programing language
 // const now = 2037;
 // const ageJonas = now - 1991;

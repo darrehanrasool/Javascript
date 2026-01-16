@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operator Precedence</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Operator Precedence</h1>
+    </header>
+
+    <main>
+        <table class="precedence-table">
+            <thead>
+                <tr>
+                    <th>Precedence</th>
+                    <th>Operator Type</th>
+                    <th>Operators</th>
+                    <th>Associativity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="precedence-level">Highest (21)</td>
+                    <td>Grouping</td>
+                    <td><span class="operator">( )</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">20</td>
+                    <td>Member Access</td>
+                    <td><span class="operator">. [ ]</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">19</td>
+                    <td>Function Call</td>
+                    <td><span class="operator">( )</span> (function call)</td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">18</td>
+                    <td>Postfix</td>
+                    <td><span class="operator">++ --</span> (postfix)</td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">17</td>
+                    <td>Logical NOT, Unary</td>
+                    <td><span class="operator">! ~ + - ++ -- typeof void delete</span></td>
+                    <td class="rtl">Right-to-left</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">16</td>
+                    <td>Exponentiation</td>
+                    <td><span class="operator">**</span></td>
+                    <td class="rtl">Right-to-left</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">15</td>
+                    <td>Multiplication, Division, Remainder</td>
+                    <td><span class="operator">* / %</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">14</td>
+                    <td>Addition, Subtraction</td>
+                    <td><span class="operator">+ -</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">13</td>
+                    <td>Bitwise Shift</td>
+                    <td><span class="operator">&lt;&lt; &gt;&gt; &gt;&gt;&gt;</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">12</td>
+                    <td>Relational</td>
+                    <td><span class="operator">&lt; &lt;= &gt; &gt;= in instanceof</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">11</td>
+                    <td>Equality</td>
+                    <td><span class="operator">== != === !==</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">10</td>
+                    <td>Bitwise AND</td>
+                    <td><span class="operator">&</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">9</td>
+                    <td>Bitwise XOR</td>
+                    <td><span class="operator">^</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">8</td>
+                    <td>Bitwise OR</td>
+                    <td><span class="operator">|</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">7</td>
+                    <td>Logical AND</td>
+                    <td><span class="operator">&&</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">6</td>
+                    <td>Logical OR</td>
+                    <td><span class="operator">||</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">5</td>
+                    <td>Nullish Coalescing</td>
+                    <td><span class="operator">??</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">4</td>
+                    <td>Conditional (Ternary)</td>
+                    <td><span class="operator">? :</span></td>
+                    <td class="rtl">Right-to-left</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">3</td>
+                    <td>Assignment</td>
+                    <td><span class="operator">= += -= *= /= %= **= <<=>>= >>>= &= ^= |= &&= ||= ??=</span></td>
+                    <td class="rtl">Right-to-left</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">2</td>
+                    <td>Yield</td>
+                    <td><span class="operator">yield yield*</span></td>
+                    <td class="rtl">Right-to-left</td>
+                </tr>
+                <tr>
+                    <td class="precedence-level">Lowest (1)</td>
+                    <td>Comma</td>
+                    <td><span class="operator">,</span></td>
+                    <td class="ltr">Left-to-right</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #27ae60;"></div>
+                <span>Left-to-right associativity</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>Right-to-left associativity</span>
+            </div>
+        </div>
+
+        <div class="examples">
+            <div class="example-card">
+                <h2 class="example-title">Example 1: Arithmetic Operations</h2>
+                <div class="code-block">let result = 10 + 5 * 2 ** 3;</div>
+                <div class="explanation">
+                    <p><strong>Step-by-step evaluation:</strong></p>
+                    <div class="step">1. <span class="operator">**</span> (exponentiation) has highest precedence (16)
+                        and <strong>right-to-left</strong> associativity: <code>2 ** 3 = 8</code></div>
+                    <div class="step">2. <span class="operator">*</span> (multiplication) has precedence 15 and
+                        <strong>left-to-right</strong> associativity: <code>5 * 8 = 40</code>
+                    </div>
+                    <div class="step">3. <span class="operator">+</span> (addition) has precedence 14 and
+                        <strong>left-to-right</strong> associativity: <code>10 + 40 = 50</code>
+                    </div>
+                    <p class="key-point">Result: <code>result = 50</code></p>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h2 class="example-title">Example 2: Mixed Operations</h2>
+                <div class="code-block">let value = 5 > 3 && 10 + 2 === 12 || !false;</div>
+                <div class="explanation">
+                    <p><strong>Step-by-step evaluation:</strong></p>
+                    <div class="step">1. <span class="operator">!</span> (logical NOT) has precedence 17 and
+                        <strong>right-to-left</strong> associativity: <code>!false = true</code>
+                    </div>
+                    <div class="step">2. <span class="operator">+</span> (addition) has precedence 14 and
+                        <strong>left-to-right</strong> associativity: <code>10 + 2 = 12</code>
+                    </div>
+                    <div class="step">3. <span class="operator">></span> (relational) has precedence 12 and
+                        <strong>left-to-right</strong> associativity: <code>5 > 3 = true</code>
+                    </div>
+                    <div class="step">4. <span class="operator">===</span> (equality) has precedence 11 and
+                        <strong>left-to-right</strong> associativity: <code>12 === 12 = true</code>
+                    </div>
+                    <div class="step">5. <span class="operator">&&</span> (logical AND) has precedence 7 and
+                        <strong>left-to-right</strong> associativity: <code>true && true = true</code>
+                    </div>
+                    <div class="step">6. <span class="operator">||</span> (logical OR) has precedence 6 and
+                        <strong>left-to-right</strong> associativity: <code>true || true = true</code>
+                    </div>
+                    <p class="key-point">Result: <code>value = true</code></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>JavaScript Operator Precedence Guide</p>
+        <p>Remember: Use parentheses <span class="operator">( )</span> to explicitly control evaluation order when
+            needed.</p>
+    </footer>
+</body>
+
+</html>

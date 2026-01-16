@@ -4,12 +4,16 @@
 window.alert("Dar Rehan Rasool");
 alert("Dar Rehan Rasool");
 console.log("it will log the string to the output console");
+// we can reassign the value block scoped
 let variable = 45;
+// we can't reassign the value block scoped
 const dob = 2000;
+// we can reassign the value funtion scoped
 var demo = "Rehan";
 if (variable === 45) alert("hi buddy");
 profile_name = prompt("Enter the name buddy \n");
 console.log(profile_name);
+
 // Assignment 1
 let country = "india";
 let district = "kashmere";
@@ -20,7 +24,9 @@ console.log(population);
 // Assignment 2
 let isIsland = true;
 let language = "Kashmere";
+// in javascript we use typeof() funtion to get type of data type
 console.log(typeof country);
 console.log(typeof district);
 console.log(typeof population);
 console.log(typeof language);
+console.log(typeof isIsland);

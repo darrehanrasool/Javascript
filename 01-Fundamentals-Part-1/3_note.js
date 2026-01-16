@@ -1,5 +1,6 @@
+// funtion keywoard is used to define funtion in javascript
 // var is visible everywhere inside the function, even outside blocks (if, for, etc.).
-// Because var ignores blocks and belongs to the function
+// Because var ignores blocks and belongs to the function critical issue here ie for security
 // funtion scoped
 // we can reasign the value
 function testVar() {
@@ -9,7 +10,7 @@ function testVar() {
   console.log(x);
 }
 testVar(); // 10
-//let exists only inside { } where it is declared.
+//let exists only inside the block { } where it is declared.
 // Block scoped
 // we can reasign the value
 function testLet() {
@@ -21,6 +22,7 @@ function testLet() {
 }
 
 testLet(); // ❌ Error
+// const exists only inside the block { } where it is declared.
 // const Block scoped
 // we can't reasign the value here
 function testConst() {

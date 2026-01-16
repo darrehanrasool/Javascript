@@ -1,8 +1,8 @@
-// javascript is a dynamic typed programing language means we don't need to exeplicitly provide the type of data or value
+// javascript is a dynamic typed programing language means we don't need to exeplicitly provide the type of data
 // the interpreter will infer the type of data type at runtime when value is assigned to the variable
 // Diffrence between the javascript object and primitive data type
 //  What are primitives?
-// Primitives store actual values directly in memory space.
+//  Primitives store actual values directly in memory space.
 //  Primitive types in JavaScript:
 // 	•	number
 // 	•	string
@@ -52,7 +52,7 @@ obj2.name = "Ali";
 console.log(obj1.name); // Ali
 console.log(obj2.name); // Ali
 //  What happened?
-// 	•	obj1 and obj2 point to the same memory space
+// 	•	obj1 and obj2 point's to the same memory space
 // 	•	Changing one affects the other
 //  Objects are passed by reference
 //  objects are mutable

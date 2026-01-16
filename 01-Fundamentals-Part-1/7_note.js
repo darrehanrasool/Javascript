@@ -16,12 +16,11 @@ const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
 const heightJohn = 1.76;
-
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
-
 console.log(BMIMark, BMIJohn, markHigherBMI);
+
 // Strings and Template Literals in javascript programing language
 const firstName = "Jonas";
 const job = "teacher";
@@ -45,6 +44,7 @@ lines"
 console.log(`String
 multiple
 lines`);
+
 // Taking Decisions: if / else Statements
 const age = 15;
 
