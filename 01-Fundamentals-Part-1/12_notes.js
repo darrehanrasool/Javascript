@@ -20,3 +20,7 @@ let value = yourTweet.slice(0, 10);
 window.alert(value);
 // shorthand code
 alert(prompt("Enter your tweet Buddy ! :").slice(0, 50));
+// Dog age to Humman Age converter 🫥
+let dogAge = prompt("Enter the dog age:");
+let hummanAge = (dogAge - 2) * 4 + 21;
+alert(`buddy you dogs humman age is ${hummanAge} years old `);
