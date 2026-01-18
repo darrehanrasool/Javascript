@@ -22,6 +22,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
 // Strings and Template Literals in javascript programing language
+
 const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
@@ -39,7 +40,7 @@ console.log(`Just a regular string...`);
 console.log(
   "String with \n\
 multiple \n\
-lines"
+lines",
 );
 console.log(`String
 multiple

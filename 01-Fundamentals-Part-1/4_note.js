@@ -30,15 +30,7 @@ let num = 10;
 changeValue(num);
 console.log(num); // 10
 // Original value unchanged immutable
-// objects in Funtion
-function changeName(user) {
-  user.name = "Zoya";
-}
 
-let person = { name: "Rehan" };
-changeName(person);
-// original value changed mutable
-console.log(person.name); // Zoya
 // What are objects?
 // Objects store memory references, not actual values.
 // Object types:
@@ -52,19 +44,33 @@ obj2.name = "Ali";
 console.log(obj1.name); // Ali
 console.log(obj2.name); // Ali
 //  What happened?
-// 	•	obj1 and obj2 point's to the same memory space
+// 	•	obj1 and obj2 point's to the same memory space location
 // 	•	Changing one affects the other
 //  Objects are passed by reference
 //  objects are mutable
 console.log("Symbol returns a new unique symbol value");
-const uniqueId = Symbol("userId");
+const uniqueId1 = Symbol("userId");
+const uniqueId2 = Symbol("userId");
+console.log(uniqueId1 === uniqueId2);
 const user = {
   name: "Rehan",
-  [uniqueId]: 101,
+  [uniqueId1]: 101,
 };
+// both . and [] are member access operators in JavaScript
 console.log(user.name); // Rehan
-console.log(user[uniqueId]); // 101
+console.log(user[uniqueId1]); // 101
 console.log(Symbol("id") === Symbol("id")); // false
 const largeNumber = 12627546721534n;
 console.log(largeNumber); // 12627546721534n
 console.log(typeof largeNumber); // bigint
+
+const user1 = {
+  "full name": "Rehan Rasool",
+  age: 22,
+};
+
+console.log(user1.age); // 22
+console.log(user1["full name"]); // "Rehan Rasool"
+// Dynamic key store
+const key = "age";
+console.log(user1[key]); // 22

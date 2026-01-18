@@ -4,218 +4,601 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Operator Precedence</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>JavaScript Operators Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .search-box {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .operator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .operator-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .operator-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .operator-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .operator-symbol {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            font-family: 'Courier New', monospace;
+        }
+
+        .precedence-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .operator-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .operator-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 10px;
+        }
+
+        .code {
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+            font-weight: bold;
+        }
+
+        .result {
+            margin-top: 8px;
+            padding: 8px;
+            background: #e7f3ff;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .associativity {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .ltr {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .rtl {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .category-title {
+            color: white;
+            font-size: 1.8em;
+            margin: 30px 0 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .try-it {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .try-it:hover {
+            background: #5568d3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .operator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>JavaScript Operator Precedence</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>🚀 JavaScript Operators Guide</h1>
+            <p>Learn operators with live examples!</p>
+        </header>
 
-    <main>
-        <table class="precedence-table">
-            <thead>
-                <tr>
-                    <th>Precedence</th>
-                    <th>Operator Type</th>
-                    <th>Operators</th>
-                    <th>Associativity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="precedence-level">Highest (21)</td>
-                    <td>Grouping</td>
-                    <td><span class="operator">( )</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">20</td>
-                    <td>Member Access</td>
-                    <td><span class="operator">. [ ]</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">19</td>
-                    <td>Function Call</td>
-                    <td><span class="operator">( )</span> (function call)</td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">18</td>
-                    <td>Postfix</td>
-                    <td><span class="operator">++ --</span> (postfix)</td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">17</td>
-                    <td>Logical NOT, Unary</td>
-                    <td><span class="operator">! ~ + - ++ -- typeof void delete</span></td>
-                    <td class="rtl">Right-to-left</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">16</td>
-                    <td>Exponentiation</td>
-                    <td><span class="operator">**</span></td>
-                    <td class="rtl">Right-to-left</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">15</td>
-                    <td>Multiplication, Division, Remainder</td>
-                    <td><span class="operator">* / %</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">14</td>
-                    <td>Addition, Subtraction</td>
-                    <td><span class="operator">+ -</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">13</td>
-                    <td>Bitwise Shift</td>
-                    <td><span class="operator">&lt;&lt; &gt;&gt; &gt;&gt;&gt;</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">12</td>
-                    <td>Relational</td>
-                    <td><span class="operator">&lt; &lt;= &gt; &gt;= in instanceof</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">11</td>
-                    <td>Equality</td>
-                    <td><span class="operator">== != === !==</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">10</td>
-                    <td>Bitwise AND</td>
-                    <td><span class="operator">&</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">9</td>
-                    <td>Bitwise XOR</td>
-                    <td><span class="operator">^</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">8</td>
-                    <td>Bitwise OR</td>
-                    <td><span class="operator">|</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">7</td>
-                    <td>Logical AND</td>
-                    <td><span class="operator">&&</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">6</td>
-                    <td>Logical OR</td>
-                    <td><span class="operator">||</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">5</td>
-                    <td>Nullish Coalescing</td>
-                    <td><span class="operator">??</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">4</td>
-                    <td>Conditional (Ternary)</td>
-                    <td><span class="operator">? :</span></td>
-                    <td class="rtl">Right-to-left</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">3</td>
-                    <td>Assignment</td>
-                    <td><span class="operator">= += -= *= /= %= **= <<=>>= >>>= &= ^= |= &&= ||= ??=</span></td>
-                    <td class="rtl">Right-to-left</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">2</td>
-                    <td>Yield</td>
-                    <td><span class="operator">yield yield*</span></td>
-                    <td class="rtl">Right-to-left</td>
-                </tr>
-                <tr>
-                    <td class="precedence-level">Lowest (1)</td>
-                    <td>Comma</td>
-                    <td><span class="operator">,</span></td>
-                    <td class="ltr">Left-to-right</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #27ae60;"></div>
-                <span>Left-to-right associativity</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: #e74c3c;"></div>
-                <span>Right-to-left associativity</span>
-            </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search operators... (e.g., 'shift', 'add', 'logical')">
         </div>
 
-        <div class="examples">
-            <div class="example-card">
-                <h2 class="example-title">Example 1: Arithmetic Operations</h2>
-                <div class="code-block">let result = 10 + 5 * 2 ** 3;</div>
-                <div class="explanation">
-                    <p><strong>Step-by-step evaluation:</strong></p>
-                    <div class="step">1. <span class="operator">**</span> (exponentiation) has highest precedence (16)
-                        and <strong>right-to-left</strong> associativity: <code>2 ** 3 = 8</code></div>
-                    <div class="step">2. <span class="operator">*</span> (multiplication) has precedence 15 and
-                        <strong>left-to-right</strong> associativity: <code>5 * 8 = 40</code>
-                    </div>
-                    <div class="step">3. <span class="operator">+</span> (addition) has precedence 14 and
-                        <strong>left-to-right</strong> associativity: <code>10 + 40 = 50</code>
-                    </div>
-                    <p class="key-point">Result: <code>result = 50</code></p>
-                </div>
-            </div>
+        <div id="operatorsContainer"></div>
+    </div>
 
-            <div class="example-card">
-                <h2 class="example-title">Example 2: Mixed Operations</h2>
-                <div class="code-block">let value = 5 > 3 && 10 + 2 === 12 || !false;</div>
-                <div class="explanation">
-                    <p><strong>Step-by-step evaluation:</strong></p>
-                    <div class="step">1. <span class="operator">!</span> (logical NOT) has precedence 17 and
-                        <strong>right-to-left</strong> associativity: <code>!false = true</code>
-                    </div>
-                    <div class="step">2. <span class="operator">+</span> (addition) has precedence 14 and
-                        <strong>left-to-right</strong> associativity: <code>10 + 2 = 12</code>
-                    </div>
-                    <div class="step">3. <span class="operator">></span> (relational) has precedence 12 and
-                        <strong>left-to-right</strong> associativity: <code>5 > 3 = true</code>
-                    </div>
-                    <div class="step">4. <span class="operator">===</span> (equality) has precedence 11 and
-                        <strong>left-to-right</strong> associativity: <code>12 === 12 = true</code>
-                    </div>
-                    <div class="step">5. <span class="operator">&&</span> (logical AND) has precedence 7 and
-                        <strong>left-to-right</strong> associativity: <code>true && true = true</code>
-                    </div>
-                    <div class="step">6. <span class="operator">||</span> (logical OR) has precedence 6 and
-                        <strong>left-to-right</strong> associativity: <code>true || true = true</code>
-                    </div>
-                    <p class="key-point">Result: <code>value = true</code></p>
-                </div>
-            </div>
-        </div>
-    </main>
+    <script>
+        const operators = [
+            {
+                category: "🎯 Highest Priority",
+                items: [
+                    {
+                        symbol: "( )",
+                        name: "Grouping",
+                        precedence: 21,
+                        associativity: "ltr",
+                        description: "Forces evaluation order, always evaluated first",
+                        examples: [
+                            { code: "(2 + 3) * 4", result: "20", note: "Parentheses force addition first" },
+                            { code: "2 + 3 * 4", result: "14", note: "Without parentheses, multiplication goes first" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "📦 Object & Function Access",
+                items: [
+                    {
+                        symbol: ". []",
+                        name: "Member Access",
+                        precedence: 20,
+                        associativity: "ltr",
+                        description: "Access object properties or array elements",
+                        examples: [
+                            { code: "user.name", result: "Accesses 'name' property" },
+                            { code: "arr[0]", result: "Accesses first element" },
+                            { code: "obj['key']", result: "Accesses property by key" }
+                        ]
+                    },
+                    {
+                        symbol: "()",
+                        name: "Function Call",
+                        precedence: 19,
+                        associativity: "ltr",
+                        description: "Calls a function with arguments",
+                        examples: [
+                            { code: "alert('Hello')", result: "Calls alert function" },
+                            { code: "Math.max(1, 5, 3)", result: "5" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "🔢 Arithmetic",
+                items: [
+                    {
+                        symbol: "**",
+                        name: "Exponentiation",
+                        precedence: 16,
+                        associativity: "rtl",
+                        description: "Raises first number to the power of second",
+                        examples: [
+                            { code: "2 ** 3", result: "8", note: "2 × 2 × 2" },
+                            { code: "5 ** 2", result: "25", note: "5 × 5" },
+                            { code: "2 ** 3 ** 2", result: "512", note: "Right-to-left: 2 ** (3 ** 2) = 2 ** 9" }
+                        ]
+                    },
+                    {
+                        symbol: "* / %",
+                        name: "Multiply, Divide, Remainder",
+                        precedence: 15,
+                        associativity: "ltr",
+                        description: "Multiplication, division, and modulo operations",
+                        examples: [
+                            { code: "10 * 5", result: "50" },
+                            { code: "20 / 4", result: "5" },
+                            { code: "17 % 5", result: "2", note: "Remainder of 17 ÷ 5" },
+                            { code: "10 * 2 / 5", result: "4", note: "Left-to-right: (10 * 2) / 5" }
+                        ]
+                    },
+                    {
+                        symbol: "+ -",
+                        name: "Add, Subtract",
+                        precedence: 14,
+                        associativity: "ltr",
+                        description: "Addition and subtraction",
+                        examples: [
+                            { code: "5 + 3", result: "8" },
+                            { code: "10 - 7", result: "3" },
+                            { code: "5 + 3 * 2", result: "11", note: "Multiply first: 5 + 6" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "🔀 Bitwise Shift",
+                items: [
+                    {
+                        symbol: "<<",
+                        name: "Left Shift",
+                        precedence: 13,
+                        associativity: "ltr",
+                        description: "Shifts bits to the left (multiplies by 2^n)",
+                        examples: [
+                            { code: "5 << 1", result: "10", note: "Binary: 101 → 1010" },
+                            { code: "5 << 2", result: "20", note: "Binary: 101 → 10100" },
+                            { code: "1 << 3", result: "8", note: "Same as 1 * 2³" }
+                        ]
+                    },
+                    {
+                        symbol: ">>",
+                        name: "Right Shift",
+                        precedence: 13,
+                        associativity: "ltr",
+                        description: "Shifts bits to the right (divides by 2^n)",
+                        examples: [
+                            { code: "20 >> 1", result: "10", note: "Binary: 10100 → 1010" },
+                            { code: "20 >> 2", result: "5", note: "Binary: 10100 → 101" },
+                            { code: "8 >> 2", result: "2", note: "Same as Math.floor(8 / 4)" }
+                        ]
+                    },
+                    {
+                        symbol: ">>>",
+                        name: "Unsigned Right Shift",
+                        precedence: 13,
+                        associativity: "ltr",
+                        description: "Shifts bits right, fills with zeros",
+                        examples: [
+                            { code: "20 >>> 1", result: "10" },
+                            { code: "-5 >>> 0", result: "4294967291", note: "Converts to unsigned 32-bit" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "⚖️ Comparison",
+                items: [
+                    {
+                        symbol: "< <= > >=",
+                        name: "Relational",
+                        precedence: 12,
+                        associativity: "ltr",
+                        description: "Compares two values",
+                        examples: [
+                            { code: "5 > 3", result: "true" },
+                            { code: "10 <= 10", result: "true" },
+                            { code: "'a' < 'b'", result: "true", note: "Compares alphabetically" }
+                        ]
+                    },
+                    {
+                        symbol: "== != === !==",
+                        name: "Equality",
+                        precedence: 11,
+                        associativity: "ltr",
+                        description: "Checks if values are equal",
+                        examples: [
+                            { code: "5 === 5", result: "true", note: "Strict equality" },
+                            { code: "5 == '5'", result: "true", note: "Loose equality (converts types)" },
+                            { code: "5 === '5'", result: "false", note: "Different types" },
+                            { code: "null == undefined", result: "true" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "🔧 Bitwise Logic",
+                items: [
+                    {
+                        symbol: "&",
+                        name: "Bitwise AND",
+                        precedence: 10,
+                        associativity: "ltr",
+                        description: "Performs AND on each bit",
+                        examples: [
+                            { code: "5 & 3", result: "1", note: "Binary: 101 & 011 = 001" },
+                            { code: "12 & 10", result: "8", note: "Binary: 1100 & 1010 = 1000" }
+                        ]
+                    },
+                    {
+                        symbol: "^",
+                        name: "Bitwise XOR",
+                        precedence: 9,
+                        associativity: "ltr",
+                        description: "Performs XOR on each bit (exclusive OR)",
+                        examples: [
+                            { code: "5 ^ 3", result: "6", note: "Binary: 101 ^ 011 = 110" },
+                            { code: "12 ^ 10", result: "6", note: "Binary: 1100 ^ 1010 = 0110" }
+                        ]
+                    },
+                    {
+                        symbol: "|",
+                        name: "Bitwise OR",
+                        precedence: 8,
+                        associativity: "ltr",
+                        description: "Performs OR on each bit",
+                        examples: [
+                            { code: "5 | 3", result: "7", note: "Binary: 101 | 011 = 111" },
+                            { code: "12 | 10", result: "14", note: "Binary: 1100 | 1010 = 1110" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "🧠 Logical",
+                items: [
+                    {
+                        symbol: "&&",
+                        name: "Logical AND",
+                        precedence: 7,
+                        associativity: "ltr",
+                        description: "Returns true if both are true (short-circuits)",
+                        examples: [
+                            { code: "true && true", result: "true" },
+                            { code: "true && false", result: "false" },
+                            { code: "5 > 3 && 10 > 7", result: "true" },
+                            { code: "'hello' && 42", result: "42", note: "Returns last truthy value" }
+                        ]
+                    },
+                    {
+                        symbol: "||",
+                        name: "Logical OR",
+                        precedence: 6,
+                        associativity: "ltr",
+                        description: "Returns true if either is true (short-circuits)",
+                        examples: [
+                            { code: "false || true", result: "true" },
+                            { code: "false || false", result: "false" },
+                            { code: "null || 'default'", result: "'default'", note: "Returns first truthy value" },
+                            { code: "0 || 42", result: "42" }
+                        ]
+                    },
+                    {
+                        symbol: "??",
+                        name: "Nullish Coalescing",
+                        precedence: 5,
+                        associativity: "ltr",
+                        description: "Returns right side if left is null/undefined",
+                        examples: [
+                            { code: "null ?? 'default'", result: "'default'" },
+                            { code: "0 ?? 42", result: "0", note: "0 is not nullish" },
+                            { code: "'' ?? 'default'", result: "''", note: "Empty string is not nullish" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "❓ Conditional",
+                items: [
+                    {
+                        symbol: "? :",
+                        name: "Ternary",
+                        precedence: 4,
+                        associativity: "rtl",
+                        description: "Conditional expression (if-then-else)",
+                        examples: [
+                            { code: "true ? 'yes' : 'no'", result: "'yes'" },
+                            { code: "5 > 3 ? 'bigger' : 'smaller'", result: "'bigger'" },
+                            { code: "age >= 18 ? 'adult' : 'minor'", result: "Depends on age" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "📝 Assignment",
+                items: [
+                    {
+                        symbol: "=",
+                        name: "Assignment",
+                        precedence: 3,
+                        associativity: "rtl",
+                        description: "Assigns value to variable",
+                        examples: [
+                            { code: "x = 5", result: "x is now 5" },
+                            { code: "a = b = 10", result: "Both a and b are 10", note: "Right-to-left" }
+                        ]
+                    },
+                    {
+                        symbol: "+= -= *= /=",
+                        name: "Compound Assignment",
+                        precedence: 3,
+                        associativity: "rtl",
+                        description: "Operation + assignment combined",
+                        examples: [
+                            { code: "x += 5", result: "x = x + 5" },
+                            { code: "x *= 2", result: "x = x * 2" },
+                            { code: "x -= 3", result: "x = x - 3" }
+                        ]
+                    }
+                ]
+            },
+            {
+                category: "🎭 Special",
+                items: [
+                    {
+                        symbol: "! ~ typeof",
+                        name: "Unary Operators",
+                        precedence: 17,
+                        associativity: "rtl",
+                        description: "Operators with single operand",
+                        examples: [
+                            { code: "!true", result: "false", note: "Logical NOT" },
+                            { code: "typeof 42", result: "'number'" },
+                            { code: "~5", result: "-6", note: "Bitwise NOT" },
+                            { code: "+='3'", result: "3", note: "Converts to number" }
+                        ]
+                    },
+                    {
+                        symbol: "++ --",
+                        name: "Increment/Decrement",
+                        precedence: "17-18",
+                        associativity: "Both",
+                        description: "Adds or subtracts 1",
+                        examples: [
+                            { code: "x++", result: "Returns x, then adds 1", note: "Postfix" },
+                            { code: "++x", result: "Adds 1, then returns", note: "Prefix" },
+                            { code: "x--", result: "Returns x, then subtracts 1" }
+                        ]
+                    },
+                    {
+                        symbol: ",",
+                        name: "Comma",
+                        precedence: 1,
+                        associativity: "ltr",
+                        description: "Evaluates multiple expressions, returns last",
+                        examples: [
+                            { code: "x = (1, 2, 3)", result: "x = 3", note: "Returns last value" },
+                            { code: "a = 1, b = 2", result: "Declares multiple variables" }
+                        ]
+                    }
+                ]
+            }
+        ];
 
-    <footer>
-        <p>JavaScript Operator Precedence Guide</p>
-        <p>Remember: Use parentheses <span class="operator">( )</span> to explicitly control evaluation order when
-            needed.</p>
-    </footer>
+        function createOperatorCard(op) {
+            return `
+                <div class="operator-card" data-search="${op.name.toLowerCase()} ${op.symbol} ${op.description.toLowerCase()}">
+                    <div class="operator-header">
+                        <div class="operator-symbol">${op.symbol}</div>
+                        <div class="precedence-badge">Level ${op.precedence}</div>
+                    </div>
+                    <div class="operator-name">${op.name}</div>
+                    <div class="operator-description">${op.description}</div>
+                    ${op.examples.map(ex => `
+                        <div class="example-box">
+                            <div class="code">${ex.code}</div>
+                            <div class="result">→ ${ex.result}</div>
+                            ${ex.note ? `<div style="margin-top: 5px; color: #666; font-size: 0.9em;">💡 ${ex.note}</div>` : ''}
+                        </div>
+                    `).join('')}
+                    <div class="associativity ${op.associativity}">
+                        ${op.associativity === 'ltr' ? '← Left-to-Right' : 'Right-to-Left →'}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderOperators() {
+            const container = document.getElementById('operatorsContainer');
+            let html = '';
+
+            operators.forEach(category => {
+                html += `<h2 class="category-title">${category.category}</h2>`;
+                html += '<div class="operator-grid">';
+                category.items.forEach(op => {
+                    html += createOperatorCard(op);
+                });
+                html += '</div>';
+            });
+
+            container.innerHTML = html;
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.operator-card');
+
+            cards.forEach(card => {
+                const searchData = card.getAttribute('data-search');
+                if (searchData.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        renderOperators();
+    </script>
 </body>
 
 </html>
