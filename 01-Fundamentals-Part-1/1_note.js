@@ -25,3 +25,14 @@ keywords  is used only once. once the variable is created we can simply use vari
 in javascript we === for Equality ie it will check the content as well as data type 
 prompt() is a funtion in javascript that is used to take the input from the user
 let x = prompt("moye moye"); */
+// unhide h1 element
+// 1s delay
+// unhide p element
+// h1 changes text to "hello"
+// p chagnes text to "world"
+// interpreted programing language javascript python ruby
+// compiled programing language c c++ java swift
+// holding next line in chrome developer tools console shift + return
+// chrome developer tools ,source ,>> ,snipets, index.js
+// alert("rehan"); keywoard or funtion whose meaning is already known by the interpreter.
+// stylistic quote will result in error in javascript
