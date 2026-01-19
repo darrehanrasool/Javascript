@@ -1,11 +1,9 @@
-// Linking a External Javascript File
-{
-  /* <script src="script.js"></script>; */
-}
-let js = "amazing";
-console.log(40 + 8 + 23 - 10);
+// Linking a external javascript File
+// <script src="script.js"></script>;
 // Values and Variables  in javascript programing language
 // value is the smalest unit in programing lingo
+let js = "amazing";
+console.log(40 + 8 + 23 - 10);
 console.log("Jonas");
 console.log(23);
 let firstName = "Matilda";
@@ -26,8 +24,9 @@ let myCurrentJob = "Teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 console.log(myFirstJob);
-//in javascript we have values a value can be either object or primitive .
-// if a value is not javascript object then only its primitive
+
+//in javascript we have values, a value can be either object or primitive .
+// if a value is not object then only its primitive
 let me = {
   name: "rehan",
 };
@@ -36,6 +35,7 @@ let profile = "rehan";
 console.log(me);
 console.log(age_rehan);
 console.log(profile);
+
 // Primitive Data Types in javascript
 // 1)number data type ie let x=2; let b=7.8;
 // 2)string data type ie "rehan"
@@ -74,6 +74,5 @@ const birthYear = 1991;
 // we can mutate the variable value later
 var job = "programmer";
 job = "teacher";
-
 lastName = "Schmedtmann";
 console.log(lastName);

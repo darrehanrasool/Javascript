@@ -10,7 +10,6 @@ const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
-
 // const massMark = 95;
 // const heightMark = 1.88;
 // const massJohn = 85;
@@ -24,16 +23,15 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
-// Type Conversion and Coercion
+// Type Conversion or Type casting and  Type Coercion
 
-// type conversion
+// type conversion or type casting
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
-
 console.log(Number("Jonas"));
+//
 console.log(typeof NaN);
-
 console.log(String(23), 23);
 
 // type coercion

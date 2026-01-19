@@ -14,7 +14,7 @@ unhide p element
 h1 changes text to "hello"
 p chagnes text to "world"
 holding next line in chrome developer tools console shift + return
-chrome developer tools ,source ,>> ,snipets, index.js 
+chrome developer tools , source , >> , snipets , index.js 
 for clearing chrome developer tool console Hit the command + k
 stylistic quote will result in error in javascript
 For Hardcore Refresh of web page controle right click on refresh bar then chose Hard core Refresh

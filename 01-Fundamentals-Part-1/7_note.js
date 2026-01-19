@@ -22,33 +22,32 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
 // Strings and Template Literals in javascript programing language
-
 const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
 const year = 2037;
-
+// via string concatination
 const jonas =
   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(jonas);
-
+// via template literals
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
 
 console.log(`Just a regular string...`);
-
+// multiline via regular string by using escape sequence \n\
 console.log(
   "String with \n\
 multiple \n\
 lines",
 );
+// multiline via template literals
 console.log(`String
 multiple
 lines`);
 
 // Taking Decisions: if / else Statements
 const age = 15;
-
 if (age >= 18) {
   console.log("Sarah can start driving license 🚗");
 } else {

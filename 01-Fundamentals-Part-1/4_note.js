@@ -3,7 +3,7 @@
 // Diffrence between the javascript object and primitive data type
 //  What are primitives?
 //  Primitives store actual values directly in memory space.
-//  Primitive types in JavaScript:
+//  Primitive data types in JavaScript:
 // 	•	number
 // 	•	string
 // 	•	boolean
@@ -37,7 +37,8 @@ console.log(num); // 10
 // 	•	Object { }   javascript variable object
 // 	•	Array [ ]    array object
 // 	•	Function function() {} funtion object
-// 	•	Date, Map, Set, etc. utilities object
+// 	•	Date,Map,Set,Intl,Time etc. utilities object
+
 let obj1 = { name: "Rehan" };
 let obj2 = obj1;
 obj2.name = "Ali";
@@ -48,29 +49,31 @@ console.log(obj2.name); // Ali
 // 	•	Changing one affects the other
 //  Objects are passed by reference
 //  objects are mutable
+
+// symbol primitive data type
 console.log("Symbol returns a new unique symbol value");
 const uniqueId1 = Symbol("userId");
 const uniqueId2 = Symbol("userId");
-console.log(uniqueId1 === uniqueId2);
+console.log(uniqueId1 === uniqueId2); //False both are unique
 const user = {
   name: "Rehan",
   [uniqueId1]: 101,
 };
+
 // both . and [] are member access operators in JavaScript
 console.log(user.name); // Rehan
 console.log(user[uniqueId1]); // 101
-console.log(Symbol("id") === Symbol("id")); // false
 const largeNumber = 12627546721534n;
 console.log(largeNumber); // 12627546721534n
 console.log(typeof largeNumber); // bigint
-
+// user1
 const user1 = {
   "full name": "Rehan Rasool",
   age: 22,
 };
-
 console.log(user1.age); // 22
-console.log(user1["full name"]); // "Rehan Rasool"
-// Dynamic key store
-const key = "age";
+// the [] memeber access operator works when there is no sepacial symbol or underscore in varialble name .
+// that's the reason kept in "full name" we can write space here works fine
+console.log(user1["full name"]);
+const key = "age"; // Dynamic key store
 console.log(user1[key]); // 22
