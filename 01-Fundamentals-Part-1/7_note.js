@@ -27,10 +27,11 @@ const job = "teacher";
 const birthYear = 1991;
 const year = 2037;
 // via string concatination
+//type  Coercion javascript will implicitly convert number into string so that it will get concatinated.
 const jonas =
   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(jonas);
-// via template literals
+// via template literals, back tick `
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
 

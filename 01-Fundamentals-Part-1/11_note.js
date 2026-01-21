@@ -6,7 +6,6 @@
  * ❌ original array/string is NOT modified
  * its simply the upper bound - lower bound
  ************************************************************/
-
 let arr = ["A", "B", "C", "D", "E"];
 let str = "JavaScript";
 

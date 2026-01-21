@@ -25,30 +25,39 @@ if (BMIMark > BMIJohn) {
 }
 // Type Conversion or Type casting and  Type Coercion
 
-// type conversion or type casting
+// type conversion or type casting explicit conversion of data type
+// primitive values are passed by values .
+// primitive values are immutable
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 console.log(Number("Jonas"));
-//
+// NaN not a number type of NaN is number  falsy value ie 0.
 console.log(typeof NaN);
 console.log(String(23), 23);
 
-// type coercion
+// type coercion implicit conversion of data type
+// in case of + it trigers number to stings
 console.log("I am " + 23 + " years old");
+// in case of - it trigers string's to number
 console.log("23" - "10" - 3);
-console.log("23" / "2");
-
+console.log("23" * "2"); //46
+console.log("23" / "2"); //11.5
+// type coercion implicit conversion
 let n = "1" + 1; // '11'
-n = n - 1;
+n = n - 1; //10
 console.log(n);
+
 // Truthy and Falsy Values
-// 5 falsy values: 0, '', undefined, null, NaN
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean("Jonas"));
-console.log(Boolean({}));
-console.log(Boolean(""));
+//5 falsy values: 0, '', undefined, null,false, NaN is a falsy value of type number
+console.log(Boolean(0)); //falsey value ie false
+console.log(Boolean(undefined)); //falsey value ie false
+console.log(Boolean(null)); //falsy value ie false
+console.log(Boolean(NaN)); //faslsy value ie false
+console.log(Boolean(false)); //falsy value ie false
+console.log(Boolean("Jonas")); //truthy value ie true
+console.log(Boolean({})); //truthy value ie true
+console.log(Boolean("")); //fasly value ie false
 
 const money = 100;
 if (money) {
