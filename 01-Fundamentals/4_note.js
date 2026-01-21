@@ -1,4 +1,4 @@
-// javascript is a dynamic typed programing language means we don't need to exeplicitly provide the type of data
+// javascript is a dynamic typed programing language means we don't need to exeplicitly provide the type of data type
 // the interpreter will infer the type of data type at runtime when value is assigned to the variable
 // Diffrence between the javascript object and primitive data type
 //  What are primitives?
@@ -72,7 +72,7 @@ const user1 = {
   age: 22,
 };
 console.log(user1.age); // 22
-// the [] memeber access operator works when there is no sepacial symbol or underscore in varialble name .
+// the [] memeber access operator works when there is no sepacial symbol $ or underscore in varialble name .
 // that's the reason kept in "full name" we can write space here works fine
 console.log(user1["full name"]);
 const key = "age"; // Dynamic key store

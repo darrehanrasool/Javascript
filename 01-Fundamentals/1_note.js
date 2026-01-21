@@ -4,7 +4,9 @@ command + option + j chrome developer tools
 command + B for vscode full screen
 let const var are  keywoards for creating variables in javascript
 keywords  is used only once. once the variable is created we can simply use variable name
-in javascript we === for Equality ie it will check the content as well as data type 
+in javascript we === for Equality ie it will check the content as well as data type strict Equality
+in javascript we == for Equality ie it will check the content only lose
+ Equality
 prompt() is a funtion in javascript that is used to take the input from the user
 let x = prompt("moye moye"); 
 script dummy eg 

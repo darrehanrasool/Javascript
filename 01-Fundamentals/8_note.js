@@ -24,39 +24,38 @@ if (BMIMark > BMIJohn) {
   console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
 // Type Conversion or Type casting and  Type Coercion
-
 // type conversion or type casting explicit conversion of data type
-// primitive values are passed by values .
-// primitive values are immutable
+
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 console.log(Number("Jonas"));
-// NaN not a number type of NaN is number  falsy value ie 0.
-console.log(typeof NaN);
+// NaN not a number type of NaN is a falsy value of type number
+console.log(typeof NaN); //number
 console.log(String(23), 23);
 
 // type coercion implicit conversion of data type
 // in case of + it trigers number to stings
-console.log("I am " + 23 + " years old");
 // in case of - it trigers string's to number
+// in case of / it trigers string's to number
+// in case of * it trigers string's to number
+console.log("I am " + 23 + " years old");
 console.log("23" - "10" - 3);
 console.log("23" * "2"); //46
 console.log("23" / "2"); //11.5
-// type coercion implicit conversion
 let n = "1" + 1; // '11'
 n = n - 1; //10
-console.log(n);
+console.log(n); //10
 
 // Truthy and Falsy Values
-//5 falsy values: 0, '', undefined, null,false, NaN is a falsy value of type number
+//Everthing is truthy except 5 falsy values : 0, '', undefined, null,false, NaN is a falsy value of type number
 console.log(Boolean(0)); //falsey value ie false
 console.log(Boolean(undefined)); //falsey value ie false
 console.log(Boolean(null)); //falsy value ie false
 console.log(Boolean(NaN)); //faslsy value ie false
 console.log(Boolean(false)); //falsy value ie false
 console.log(Boolean("Jonas")); //truthy value ie true
-console.log(Boolean({})); //truthy value ie true
+console.log(Boolean({})); //truthy value ie true ‼️
 console.log(Boolean("")); //fasly value ie false
 
 const money = 100;
@@ -65,8 +64,8 @@ if (money) {
 } else {
   console.log("You should get a job!");
 }
-
-let height = 0;
+// 🤔 it might be teadous sometime to get it , check it 0 itself is falsy value but height is defined
+let height = 0; //defined
 if (height) {
   console.log("YAY! Height is defined");
 } else {

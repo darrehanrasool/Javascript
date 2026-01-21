@@ -338,7 +338,7 @@ const operators = [
           { code: "!true", result: "false", note: "Logical NOT" },
           { code: "typeof 42", result: "'number'" },
           { code: "~5", result: "-6", note: "Bitwise NOT" },
-          { code: "+='3'", result: "3", note: "Converts to number" },
+          { code: "+'3'", result: "3", note: "Converts to number" },
         ],
       },
       {

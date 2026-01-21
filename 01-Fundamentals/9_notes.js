@@ -1,12 +1,12 @@
 // we can omit curly braces if,if statement is having only one single line to execute
 // Equality Operators: == vs. ===
-// it will check for the content as well as data type, data type must be same ie strict Equality no type coercion
+// it will check for the content as well as data type, data type must be same ie strict Equality no type coercion ‼️
 const age = "18";
 if (age === 18) console.log("You just became an adult :D (strict)");
 
-// it will check only for the content ,data type can be diffrent content must be same ie loose Equality type coercion
+// it will check only for the content ,data type can be diffrent content must be same ie loose Equality type coercion ‼️
 if (age == 18) console.log("You just became an adult :D (loose)");
-
+// prompt() is  a inbuilt keywoard in javscript that is used to take the input from user coverts it into string.
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);

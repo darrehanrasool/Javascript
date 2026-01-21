@@ -17,7 +17,7 @@ let profileName = "Rehan";
 let $function = 27;
 let _rehan = "underscore";
 let person = "jonas";
-// use uppercase for unversal global values
+// use uppercase for universal global values
 let PI = 3.1415;
 let myFirstJob = "Coder";
 let myCurrentJob = "Teacher";
@@ -74,5 +74,7 @@ const birthYear = 1991;
 // we can mutate the variable value later
 var job = "programmer";
 job = "teacher";
+// Because JavaScript is running in non-strict (sloppy) mode its teadous to debug this type of variables
+// globalThis.lastName = "Schmedtmann"; it will consider it like this
 lastName = "Schmedtmann";
 console.log(lastName);

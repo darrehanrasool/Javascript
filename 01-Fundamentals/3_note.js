@@ -1,5 +1,4 @@
 // funtion keywoard is used to define funtion in javascript
-
 // var is visible everywhere inside the function, even outside blocks (if,elseif,else,for,switch etc...).
 // Because var ignores blocks and belongs to the function critical issue here ie for security
 // funtion scoped

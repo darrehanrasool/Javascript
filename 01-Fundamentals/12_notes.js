@@ -1,4 +1,4 @@
-// Basics of leghth in python programing wenuse len()
+// Basic of leghth in javascript ,in  python programing we use len() funtion
 let tweet = prompt("enter tweet");
 tweet.length;
 console.log(tweet.length);
