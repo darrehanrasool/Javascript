@@ -15,21 +15,15 @@ if (variable === 45) alert("hi buddy");
 let profile_name = prompt("Enter the name buddy \n");
 console.log(profile_name);
 
-// Assignment 1
-let country = "india";
-let district = "kashmere";
-let population = 10;
-console.log(country);
-console.log(district);
-console.log(population);
-
-// Assignment 2
-let isIsland = true;
-let language = "Kashmere";
-
 // in javascript we use typeof() funtion to get type of data type
 console.log(typeof country);
 console.log(typeof district);
 console.log(typeof population);
 console.log(typeof language);
 console.log(typeof isIsland);
+
+console.log("9" - "5"); // -> 4
+console.log("19" - "13" + "17"); // -> '617'
+console.log("19" - "13" + 17); // -> 23
+console.log("123" < 57); // -> false
+console.log(5 + 6 + "4" + 9 - 4 - 2); // -> 1143

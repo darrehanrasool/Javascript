@@ -24,3 +24,19 @@ compiled programing language c c++ java swift
 Babel is a javascript compiler it allows us to convert ES6 module syntax ie Modern javascript into ES5 module syntax ie
 standard javascript for browser compatablity transpiling
 */
+// Assignment 1
+let country = "india";
+let district = "kashmere";
+let population = 10;
+console.log(country);
+console.log(district);
+console.log(population);
+console.log(population);
+// Assignment 2
+let isIsland = false;
+let language;
+
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
