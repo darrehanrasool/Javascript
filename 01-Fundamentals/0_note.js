@@ -22,7 +22,7 @@ console.log("it will log the string to the output console");
 interpreted programing language javascript python ruby
 compiled programing language c c++ java swift
 Babel is a javascript compiler it allows us to convert ES6 module syntax ie Modern javascript into ES5 module syntax ie
-standard javascript for browser compatablity transpiling ES6
+standard javascript for browser compatablity transpiling ES6 to standrad javascript ES5
 */
 // Assignment 1
 let country = "india";
