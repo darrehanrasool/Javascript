@@ -345,7 +345,7 @@ const operators = [
         symbol: "++ --",
         name: "Increment/Decrement",
         precedence: "17-18",
-        associativity: "Both",
+        associativity: "both",
         description: "Adds or subtracts 1",
         examples: [
           { code: "x++", result: "Returns x, then adds 1", note: "Postfix" },
