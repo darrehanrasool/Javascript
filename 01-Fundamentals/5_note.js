@@ -1,3 +1,4 @@
+//"use strict";
 // Linking a external javascript File
 // <script src="script.js"></script>;
 // Values and Variables  in javascript programing language
@@ -43,7 +44,7 @@ console.log(profile);
 // 4)undefined data type ie let address;
 // 5)null data type ie let address=null;
 // 6)bigInt data type let salary=652675346712354;
-// 8)symbol data type returns a unique symbol value
+// 8)symbol data type returns a new unique symbol value
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -59,7 +60,7 @@ console.log(year); //undefined primitive data type
 console.log(typeof year); //undefined primitive data type
 year = 1991;
 console.log(typeof year); // number
-console.log(typeof null); // object bug it should be null
+console.log(typeof null); // object
 // there is a bug in javascript it should return null,it returns object,as null is not an object
 // creating variables via different keywoards in javascript programing language ie let const var
 // let, const and var
@@ -74,7 +75,8 @@ const birthYear = 1991;
 // we can mutate the variable value later
 var job = "programmer";
 job = "teacher";
-// Because JavaScript is running in non-strict (sloppy) mode its teadous to debug this type of variables
-// globalThis.lastName = "Schmedtmann"; it will consider it like this
 lastName = "Schmedtmann";
 console.log(lastName);
+console.log(globalThis.lastName);
+// Because it means JavaScript is running in non-strict (sloppy) mode its teadous to debug this type of variables
+// globalThis.lastName = "Schmedtmann"; it will consider it like this

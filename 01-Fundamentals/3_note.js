@@ -38,8 +38,9 @@ function testConst() {
 testConst(); // ❌ Error
 
 // const numNeighbours = prompt("How many neighbour countries does your country have?",);
-
-// LATER : This helps us prevent bugs Type conversion or type casting
+// here if we see the output is string
+//as if we are using switch there is strict equality
+// LATER : This helps us prevent bugs Type conversion or Type casting
 const numNeighbours = Number(
   prompt("How many neighbour countries does your country have?"),
 );

@@ -29,8 +29,7 @@ if (BMIMark > BMIJohn) {
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
-console.log(Number("Jonas"));
-// NaN not a number type of NaN is a falsy value of type number
+console.log(Number("Jonas")); //NaN not a number,NaN is a falsy value of type number
 console.log(typeof NaN); //number
 console.log(String(23), 23);
 
@@ -47,8 +46,9 @@ let n = "1" + 1; // '11'
 n = n - 1; //10
 console.log(n); //10
 
-// Truthy and Falsy Values
+// Truthy and Falsy Values in javascript programing language
 //Everthing is truthy except 5 falsy values : 0, '', undefined, null,false, NaN is a falsy value of type number
+//'' is not nullish ,{} is not nullish eg null ?? default
 console.log(Boolean(0)); //falsey value ie false
 console.log(Boolean(undefined)); //falsey value ie false
 console.log(Boolean(null)); //falsy value ie false
@@ -64,14 +64,15 @@ if (money) {
 } else {
   console.log("You should get a job!");
 }
-// 🤔 it might be teadous sometime to get it , check it 0 itself is falsy value but height is defined
+// 🤔 it might be teadious sometime to get it , check it 0 itself is falsy value but height is defined
+
 let height = 0; //defined
 if (height) {
   console.log("YAY! Height is defined");
 } else {
   console.log("Height is UNDEFINED");
 }
-// strict Equality
+// strict Equality ===
 switch (language) {
   case "chinese":
   case "mandarin":

@@ -21,7 +21,7 @@ console.log(typeof district);
 console.log(typeof population);
 console.log(typeof language);
 console.log(typeof isIsland);
-
+// it will trigger number and string based on the operator
 console.log("9" - "5"); // -> 4
 console.log("19" - "13" + "17"); // -> '617'
 console.log("19" - "13" + 17); // -> 23

@@ -1,9 +1,10 @@
 // Statements and Expressions
-3 + 4;
-1991;
-true && false && !false; //false
+3 + 4; //expression will result an output
+1991; //expression  will result an output
+true && false && !false; //expression will result an output
 
 if (23 > 10) {
+  //statement will not result an output automatically
   const str = "23 is bigger";
 }
 
@@ -14,7 +15,7 @@ console.log(`I'm ${2037 - 1991} years old ${me}`);
 const age = 23;
 // age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
-const drink = age >= 18 ? "wine 🍷" : "water 💧";
+const drink = age >= 18 ? "wine 🍷" : "water 💧"; //expression
 console.log(drink);
 
 let drink2;
@@ -41,6 +42,8 @@ const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(
   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`,
 );
+let population = 35;
+let country = "india";
 console.log(
   `${country}'s population is ${population > 33 ? "above" : "below"} average`,
 );

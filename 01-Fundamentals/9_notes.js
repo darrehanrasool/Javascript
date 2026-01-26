@@ -6,7 +6,7 @@ if (age === 18) console.log("You just became an adult :D (strict)");
 
 // it will check only for the content ,data type can be diffrent content must be same ie loose Equality type coercion ‼️
 if (age == 18) console.log("You just became an adult :D (loose)");
-// prompt() is  a inbuilt keywoard in javscript that is used to take the input from user coverts it into string.
+// prompt() is  a inbuilt keywoard in javscript that is used to take the input from user ,return tpye : string.
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
@@ -39,7 +39,6 @@ console.log(!hasDriversLicense);
 // } else {
 //   console.log('Someone else should drive...');
 // }
-
 const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired); //false
 

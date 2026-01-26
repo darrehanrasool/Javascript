@@ -56,7 +56,6 @@ if (age >= 18) {
 }
 
 birthYear = 2012;
-
 let century;
 if (birthYear <= 2000) {
   century = 20;

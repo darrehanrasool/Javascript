@@ -24,7 +24,7 @@ const operators = [
     ],
   },
   {
-    category: "📦 Object & Function Access",
+    category: "Object & Function Access",
     items: [
       {
         symbol: ". []",

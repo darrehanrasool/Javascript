@@ -1,11 +1,12 @@
-// Basic of leghth in javascript ,in  python programing we use len() funtion
+//in  python programing we use len() funtion.
+//in javascript programing length is a property not a funtion ie name.length correct name.length() wronge
 let tweet = prompt("enter tweet");
 tweet.length;
 console.log(tweet.length);
 let yourName = prompt("enter name");
 let first = yourName.slice(0, 1);
-let upper = first.toUpperCase();
-let remains = yourName.slice(1).toLowerCase();
+let upper = first.toUpperCase(); //upper case
+let remains = yourName.slice(1).toLowerCase(); // lower case
 console.log(upper + remains);
 let full = upper + remains;
 // template literals

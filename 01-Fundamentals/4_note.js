@@ -32,7 +32,7 @@ console.log(num); // 10
 // Original value unchanged immutable
 
 // What are objects?
-// Objects store memory references, not actual values.
+// Objects store memory references, not actual values in the memory space.
 // Object types:
 // 	•	Object { }   javascript variable object
 // 	•	Array [ ]    array object
@@ -63,17 +63,21 @@ const user = {
 // both . and [] are member access operators in JavaScript
 console.log(user.name); // Rehan
 console.log(user[uniqueId1]); // 101
+
+//bigint primitive data type
 const largeNumber = 12627546721534n;
 console.log(largeNumber); // 12627546721534n
 console.log(typeof largeNumber); // bigint
+
 // user1
 const user1 = {
-  "full name": "Rehan Rasool",
+  "full name": " Dar Rehan Rasool",
+  // the [] memeber access operator works when there is no sepacial symbol $ or underscore in varialble name .
+  // that's the reason kept in "full name" we can write space here works fine
   age: 22,
 };
 console.log(user1.age); // 22
-// the [] memeber access operator works when there is no sepacial symbol $ or underscore in varialble name .
-// that's the reason kept in "full name" we can write space here works fine
 console.log(user1["full name"]);
-const key = "age"; // Dynamic key store
+// Dynamic key store
+const key = "age";
 console.log(user1[key]); // 22

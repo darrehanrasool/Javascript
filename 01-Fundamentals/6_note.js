@@ -39,6 +39,10 @@ x = y = 25 - 10 - 5; // x = y = 10, x = 10
 console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+let language = "english";
+let population = 40;
+let isIsland = false;
+let country = "russia";
 
 if (language === "english" && population < 50 && !isIsland) {
   console.log(`You should live in ${country} :)`);
