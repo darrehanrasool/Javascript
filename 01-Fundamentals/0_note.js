@@ -39,3 +39,43 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+const content = [
+  [
+    "React is extremely popular",
+    "It makes building complex, interactive UIs a breeze",
+    "It's powerful & flexible",
+    "It has a very active and versatile ecosystem",
+  ],
+  [
+    "Components, JSX & Props",
+    "State",
+    "Hooks (e.g., useEffect())",
+    "Dynamic rendering",
+  ],
+  [
+    "Official web page (react.dev)",
+    "Next.js (Fullstack framework)",
+    "React Native (build native mobile apps with React)",
+  ],
+  [
+    "Vanilla JavaScript requires imperative programming",
+    "Imperative Programming: You define all the steps needed to achieve a result",
+    "React on the other hand embraces declarative programming",
+    "With React, you define the goal and React figures out how to get there",
+  ],
+];
+//•	map() → “Give me a new version of this list”
+//the return of map() will be undefined
+let value_1 = content.map((values) => {
+  values.map((x) => {
+    console.log(x);
+  });
+});
+//•	forEach() → “Do something with each item”
+//the return of forEach() will be undefined
+let value_2 = content.forEach((values) => {
+  values.forEach((data) => {
+    console.log(data);
+  });
+});
+console.log(value_1, value_2);
