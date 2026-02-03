@@ -1,6 +1,6 @@
 // single line comment
 /* multiline comment in javascript */
-// const job; this will throw an error  as it can't be empty if its const variable
+// const job; this will throw an error! as it can't be empty if its const variable
 window.alert("Dar Rehan Rasool");
 alert("Dar Rehan Rasool");
 console.log("it will log the string to the output console");
@@ -14,7 +14,6 @@ var demo = "Rehan";
 if (variable === 45) alert("hi buddy");
 let profile_name = prompt("Enter the name buddy \n");
 console.log(profile_name);
-
 // in javascript we use typeof() funtion to get type of data type
 console.log(typeof country);
 console.log(typeof district);

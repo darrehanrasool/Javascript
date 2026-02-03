@@ -1,18 +1,3 @@
-// Assignment 1
-let country = "india";
-let district = "kashmere";
-let population = 10;
-console.log(country);
-console.log(district);
-console.log(population);
-console.log(population);
-// Assignment 2
-let isIsland = false;
-let language;
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
 const content = [
   [
     "React is extremely popular",
@@ -38,18 +23,37 @@ const content = [
     "With React, you define the goal and React figures out how to get there",
   ],
 ];
-//•	map() → “Give me a new version of this list”
-//the return of map() will be undefined
-let value_1 = content.map((values) => {
-  values.map((x) => {
+//map()→“Give me a new version of this list”.
+//the return of map() will be newer version of list.
+//Every map() must return somthing!.
+//Inner map() returns a new array.
+//Outer map() must return that inner array.
+let x = content.map((values) => {
+  return values.map((x) => {
     console.log(x);
+    return "hola :" + x;
   });
 });
-//•	forEach() → “Do something with each item”
-//the return of forEach() will be undefined
-let value_2 = content.forEach((values) => {
+console.log(x);
+//forEach()→ “Do something with each item”.
+//the return of forEach() will be undefined.
+content.forEach((values) => {
   values.forEach((data) => {
     console.log(data);
   });
 });
-console.log(value_1, value_2);
+// Assignment 1
+let country = "india";
+let district = "kashmere";
+let population = 10;
+console.log(country);
+console.log(district);
+console.log(population);
+console.log(population);
+// Assignment 2
+let isIsland = false;
+let language;
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);

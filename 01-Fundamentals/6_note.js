@@ -1,5 +1,4 @@
 // operators in javascript programing language
-// Basic operators
 // Math operators
 const now = 2037;
 const ageJonas = now - 1991;
@@ -11,7 +10,6 @@ console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 const firstName = "Jonas";
 const lastName = "Schmedtmann";
 console.log(firstName + " " + lastName);
-
 // Assignment operators in javascript
 //let x = 10 + 5; // 15
 //x += 10; // x = x + 10 = 25
@@ -20,8 +18,7 @@ console.log(firstName + " " + lastName);
 //x--; //post decrement
 //++x: //pre increment
 //--X: //pre decrement
-console.log(x);
-
+//console.log(x);
 // Comparison operators in javascript
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);

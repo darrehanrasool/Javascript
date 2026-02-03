@@ -1,0 +1,20 @@
+command + F for quick replacement of words in vscode for testing.
+command + option + j chrome developer tools for web development.
+command + B for vscode full screen.
+let,const,var are  keywoards for creating variables in javascript.
+keywords is used only once,once the variable is created we can simply use the variable name.
+in javascript we === for Equality ie it will check the content as well as data type ie strict Equality.
+in javascript we ==  for Equality ie it will check the content only ie lose Equality.
+prompt() is a built in funtion in javascript that is used to take the input from the user.
+let x = prompt("hi there enter your variable value !"); 
+script is a peice of code that make the hml element funtional. 
+unhide h1 element.
+1s delay.
+unhide p element.
+h1 changes text to "hello".
+p  chagnes text to "world".
+Holding next line in chrome developer tools console shift + return
+chrome developer tools , source , >> , snipets , index.js 
+for clearing chrome developer tool console hit the command + k.
+stylistic quote will result error in javascript.
+For Hardcore Refresh of web page controle right click on refresh bar then chose Hard core Refresh.

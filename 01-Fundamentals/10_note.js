@@ -38,7 +38,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
   console.log("No one wins the trophy 😭");
 }
-// The switch Statement here, there is no concept of lose equality == ie only strict equality === in switch.
+// The switch Statement ,strict equality ===
 const day = "friday";
 switch (day) {
   case "monday": // day === 'monday'

@@ -1,9 +1,9 @@
 /************************************************************
  * JAVASCRIPT slice() – COMPLETE UNDERSTANDING CHEAT SHEET
  * slice(start, end)
- * ✅ start → INCLUDED
- * ❌ end   → EXCLUDED
- * ❌ original array/string is NOT modified
+ * start → INCLUDED
+ * end   → EXCLUDED
+ * original array/string is NOT modified
  * its simply the upper bound - lower bound
  ************************************************************/
 let arr = ["A", "B", "C", "D", "E"];

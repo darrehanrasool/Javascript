@@ -1,5 +1,6 @@
 //in  python programing we use len() funtion.
-//in javascript programing length is a property not a funtion ie name.length correct name.length() wronge
+//in javascript programing we use length .
+//length is a property not a funtion ie name.length correct name.length() wronge
 let tweet = prompt("enter tweet");
 tweet.length;
 console.log(tweet.length);

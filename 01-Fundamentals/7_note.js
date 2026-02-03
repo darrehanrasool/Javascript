@@ -16,11 +16,13 @@ const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
 const heightJohn = 1.76;
+const massRehan = 1000;
+const heightRehan = 400;
+const BMIRehan = massRehan / Math.pow(heightRehan, 2);
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn, markHigherBMI);
-
 // Strings and Template Literals in javascript programing language
 const firstName = "Jonas";
 const job = "teacher";
@@ -33,7 +35,6 @@ console.log(jonas);
 // via template literals, back tick `
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
-
 console.log(`Just a regular string...`);
 // multiline via regular string by using escape sequence \n\
 console.log(
@@ -45,7 +46,6 @@ lines",
 console.log(`String
 multiple
 lines`);
-
 // Taking Decisions: if / else Statements
 const age = 15;
 if (age >= 18) {
@@ -54,10 +54,9 @@ if (age >= 18) {
   const yearsLeft = 18 - age;
   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 }
-
-birthYear = 2012;
+birthYear_1 = 2012;
 let century;
-if (birthYear <= 2000) {
+if (birthYear_1 <= 2000) {
   century = 20;
 } else {
   century = 21;

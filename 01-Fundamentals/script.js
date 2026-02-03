@@ -393,7 +393,7 @@ function createOperatorCard(op) {
                       )
                       .join("")}
                     <div class="associativity ${op.associativity}">
-                        ${op.associativity === "ltr" ? "← Left-to-Right" : "Right-to-Left →"}
+                        ${op.associativity === "ltr" ? "➡Left-to-Right" : "Right-to-Left⬅"}
                     </div>
                 </div>
             `;

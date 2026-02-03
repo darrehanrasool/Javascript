@@ -1,18 +1,14 @@
 //"use strict";
-// Linking a external javascript File
-// <script src="script.js"></script>;
-// Values and Variables  in javascript programing language
-// value is the smalest unit in programing lingo
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 console.log("Jonas");
 console.log(23);
 let firstName = "Matilda";
-// reusablity
+// reusablity of variables
 console.log(firstName);
 console.log(firstName);
 console.log(firstName);
-// Variable name conventions in javascript programing language
+// Variable name conventions
 let jonas_matilda = "JM";
 let profileName = "Rehan";
 let $function = 27;
@@ -25,9 +21,10 @@ let myCurrentJob = "Teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 console.log(myFirstJob);
-
-//in javascript we have values, a value can be either object or primitive .
-// if a value is not object then only its primitive
+// we have values and variables in javascript
+// value is the smallest unit in programing lingo.
+// a value can be either object and primitive
+// if a value is not object then only its primitive.
 let me = {
   name: "rehan",
 };
@@ -37,14 +34,6 @@ console.log(me);
 console.log(age_rehan);
 console.log(profile);
 
-// Primitive Data Types in javascript
-// 1)number data type ie let x=2; let b=7.8;
-// 2)string data type ie "rehan"
-// 3)bolean data type ie true, false
-// 4)undefined data type ie let address;
-// 5)null data type ie let address=null;
-// 6)bigInt data type let salary=652675346712354;
-// 8)symbol data type returns a new unique symbol value
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -61,22 +50,20 @@ console.log(typeof year); //undefined primitive data type
 year = 1991;
 console.log(typeof year); // number
 console.log(typeof null); // object
-// there is a bug in javascript it should return null,it returns object,as null is not an object
-// creating variables via different keywoards in javascript programing language ie let const var
-// let, const and var
-// we can mutate the variable value later
+// there is a bug in javascript it should return null,it returns object,as null is not an object.
+// creating variables via different keywoards in javascript programing language ie let const var.
+// we can mutate the variable value later block scoped
 let age = 30;
 age = 31;
-// we can't mutate the variable value later
+// we can't mutate the variable value later block scoped
 const birthYear = 1991;
 // birthYear = 1990;
-// const job; error if we are defining variable name with const keywoard it should not be empty ie undefined
-// old way of creating variable legacy reason to kept it here
-// we can mutate the variable value later
+// const job; it will throw error as const variable can't be empty.
+// we can mutate the variable value later funtion scoped
 var job = "programmer";
 job = "teacher";
+//here i am defining the variable without proper keywoard.
+//it means javascript is running in non-strict (sloppy mode).
 lastName = "Schmedtmann";
 console.log(lastName);
 console.log(globalThis.lastName);
-// Because it means JavaScript is running in non-strict (sloppy) mode its teadous to debug this type of variables
-// globalThis.lastName = "Schmedtmann"; it will consider it like this
