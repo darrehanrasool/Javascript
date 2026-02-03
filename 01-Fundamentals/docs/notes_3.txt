@@ -1,0 +1,14 @@
+javascript allows us to add dynamic effects to the websites ie spinner of twiter.
+we can run javascript outside the web Browser ie on web server via Node.js.
+Node.js allows us to write backend applications.
+We can use javascript to build native mobile applications as well as native desktop applications.
+Native Mobile Applications ie via React native + ionic and Native desktop applications Via javascript + electron.
+Javascript Releases ES5,ES6,ES7,ES8,ES9,ES10,ES11.so.....on,WE USE ECMA SCRIPT 6 MODULE SYNTAX IE Modern Javascript.
+alert() or window.alert() is a  builtin funtion in javascript that is used for dispalying pop ups.
+its a keywoard or funtion whose meaning is already known by the interpreter.
+console.log is not meant for user. user can't see it ,its meant for developer to debug the code.
+console.log("it will log the string to the output console").
+interpreted programing language:javascript,python,ruby.
+compiled programing language:c,c++,java,swift.
+Babel is a javascript compiler it allows us to convert ES6 module syntax ie Modern javascript into ES5 module syntax ie
+standard javascript for browser compatablity transpiling ES6 to standrad javascript ES5.

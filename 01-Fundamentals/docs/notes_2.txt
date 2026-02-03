@@ -1,0 +1,12 @@
+javascript is a programing language that powers the whole web.
+developed by brendan eich in 10 days.it was first called live script
+different version of javascript ,europian standised the language.
+they created ECMA script europian computer manifacture association.
+script is a peice of code that tell the html element how to behave.
+javascript is a highlevel ,object oriented, multi paradigm programing language.
+High Level: Actually we don't have to worry about complex memory management system.
+Object oriented : Javascript programing language is based on objects.
+Multi paradigm : we can use different style of programing ie monolithic,imparative,declarative.
+HTML for Markup layout of website <p> </p> Noun.
+CSS  for styling the website p{color:red}  Adjective.
+Javascript for funtionality p.hide().      Verbs.
