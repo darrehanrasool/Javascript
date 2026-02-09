@@ -1,5 +1,4 @@
 "use strict";
-// bmi calculator dummy ! example
 function bmiCalculator(weight, height) {
   return Math.round(weight / Math.pow(height, 2));
   //return Math.floor(weight / height ** 2);
