@@ -1,7 +1,9 @@
+// Activating Strict Mode
 "use strict";
-function bmiCalculator(weight, height) {
-  return Math.round(weight / Math.pow(height, 2));
-  //return Math.floor(weight / height ** 2);
-}
-let bmi = bmiCalculator(65, 1.8);
-console.log(bmi);
+let hasDriversLicense = false;
+const passTest = true;
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log("I can drive :D");
+//these are reserved words they might be implemented in future
+const interface = "Audio";
+const private = 534;

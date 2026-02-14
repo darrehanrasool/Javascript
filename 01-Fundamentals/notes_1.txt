@@ -19,4 +19,3 @@ chrome developer tools , source , >> , snipets , index.js
 for clearing chrome developer tool console hit the command + k.
 stylistic quote will result error in javascript.
 For Hardcore Refresh of web page controle right click on refresh bar then chose Hard core Refresh.
-Assignments: https://assignments-c03.jonas.io/instructions.html
