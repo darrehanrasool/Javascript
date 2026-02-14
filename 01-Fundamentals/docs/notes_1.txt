@@ -1,8 +1,0 @@
-  <!-- <script>
-        10 + 20 + 30;
-        console.log("it will not be executed implicitly inside the website or ie console");
-        console.log("for that we use explicitly console.log() it will log the string to  the output console")
-        console.log(10 + 20 + 30);
-    </script> -->
-
-  Assignments: https://assignments-c03.jonas.io/instructions.html

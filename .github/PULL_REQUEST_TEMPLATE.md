@@ -12,4 +12,3 @@ Explain what your PR does.
 
 - [ ] Code follows project standards
 - [ ] Tests added/updated
-- [ ] Documentation updated

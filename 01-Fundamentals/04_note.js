@@ -3,7 +3,7 @@
 //  Primitives store actual values directly in memory space.
 //  Primitives are passed by values.
 //  Primitive are immutable.
-//  As the name it self suggests value it self can't change.
+//  As the name it self suggests Value it self can't change.
 //  Primitive data types in JavaScript:
 // 1)number    data type ie let x=2; let b=7.8;
 // 2)string    data type ie "rehan"
@@ -19,10 +19,9 @@ function changeValue(x) {
 let num = 10;
 changeValue(num);
 console.log(num);
-// 10 Original value unchanged immutable
-
+//  10 Original value unchanged immutable
 //  What are objects?
-//  Objects store memory references, not actual values in the memory space.
+//  Objects store memory references,not actual values in the memory space.
 //  Objects are passed by reference
 //  objects are mutable
 //  As the name it self suggests value it self can change.

@@ -36,13 +36,15 @@ console.log(jonas);
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
 console.log(`Just a regular string...`);
-// multiline via regular string by using escape sequence \n\
+// multiline via regular strings
+// By using the escape sequence \n\
 console.log(
   "String with \n\
 multiple \n\
 lines",
 );
 // multiline via template literals
+// By using the next line
 console.log(`String
 multiple
 lines`);

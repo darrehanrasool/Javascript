@@ -1,4 +1,0 @@
- javascript is a dynamic typed programing language.
- we don't need to exeplicitly provide the type of data type.
- the interpreter will infer the type of data type at runtime.
- depending on the which value is assigned to the variable.

@@ -23,37 +23,42 @@ const content = [
     "With React, you define the goal and React figures out how to get there",
   ],
 ];
-//map()→“Give me a new version of this list”.
-//the return of map() will be newer version of list.
-//Every map() must return somthing!.
+//map() Give me a new version of this list.
+//the return of map() will be list.
+//Every map() must return.
 //Inner map() returns a new array.
 //Outer map() must return that inner array.
 let x = content.map((values) => {
   return values.map((x) => {
-    console.log(x);
     return "hola :" + x;
   });
 });
 console.log(x);
-//forEach()→ “Do something with each item”.
+//forEach() Do something with each item.
 //the return of forEach() will be undefined.
+//this is used for side effects only.
 content.forEach((values) => {
   values.forEach((data) => {
     console.log(data);
   });
 });
-// Assignment 1
 let country = "india";
 let district = "kashmere";
 let population = 10;
 console.log(country);
 console.log(district);
 console.log(population);
-console.log(population);
-// Assignment 2
 let isIsland = false;
 let language;
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
+//there are only two nullish value null and undefined
+null ?? "default"; // "default"
+undefined ?? "default"; // "default"
+0 ?? "default"; // 0
+"" ?? "default"; // ""
+false ?? "default"; // false
+NaN ?? "default"; // NaN

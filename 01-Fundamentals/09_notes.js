@@ -5,12 +5,11 @@ const age = "18";
 if (age === 18) console.log("You just became an adult :D (strict)");
 // it will check for the content only, content must be same Lose Equality type coercion.
 if (age == 18) console.log("You just became an adult :D (loose)");
-// prompt() is  a inbuilt funtion in javascript that is used to take the input from user,return type : string.
+// prompt() is  a inbuilt funtion in javascript that is used to take the input from user, return type : string.
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 if (favourite === 23) {
-  // 22 === 23 -> FALSE
   console.log("Cool! 23 is an amzaing number!");
 } else if (favourite === 7) {
   console.log("7 is also a cool number");
@@ -35,7 +34,7 @@ if (hasDriversLicense && hasGoodVision) {
   console.log("Someone else should drive...");
 }
 const isTired = false;
-console.log(hasDriversLicense && hasGoodVision && isTired); //false
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
 if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log("Sarah is able to drive!");

@@ -1,4 +1,3 @@
-// Statements and Expressions
 //expression will result an output automatically.
 3 + 4;
 1991;
@@ -10,12 +9,11 @@ if (23 > 10) {
 const me = "Jonas";
 console.log(`I'm ${2037 - 1991} years old ${me}`);
 // The Conditional (Ternary) Operator
-// condition?statement-1:statement-2;
+// condition ? statement-1 : statement-2;
 const age = 23;
-//age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
-const drink = age >= 18 ? "wine 🍷" : "water 💧";
+// age > = 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+const drink = age >= 18 ? "wine🍷" : "water💧";
 console.log(drink);
-
 let drink_2;
 if (age >= 18) {
   drink_2 = "wine 🍷";
@@ -23,7 +21,7 @@ if (age >= 18) {
   drink_2 = "water 💧";
 }
 console.log(drink_2);
-console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+console.log(`I like to drink ${age >= 18 ? "wine🍷" : "water💧"}`);
 // Coding Challenge #4
 /*
  Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant.
@@ -38,7 +36,7 @@ HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
 HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 
 GOOD LUCK 
 */
-// ternary operator
+//ternary operator
 const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(

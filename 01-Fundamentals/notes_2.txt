@@ -7,6 +7,10 @@ javascript is a highlevel ,object oriented, multi paradigm programing language.
 High Level: Actually we don't have to worry about complex memory management system.
 Object oriented : Javascript programing language is based on objects.
 Multi paradigm : we can use different style of programing ie monolithic,imparative,declarative.
-HTML for Markup layout of website <p> </p> Noun.
-CSS  for styling the website p{color:red}  Adjective.
-Javascript for funtionality p.hide().      Verbs.
+HTML for Markup layout of website <p> </p>     Noun.
+CSS  for styling the website      p{color:red} Adjective.
+Javascript for funtionality       p.hide().    Verbs.
+javascript is a dynamic typed programing language.
+we don't need to exeplicitly provide the type of data type.
+the interpreter will infer the type of data type at runtime.
+depending on the which value is assigned to the variable.
