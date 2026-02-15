@@ -1,6 +1,8 @@
 "use strict";
 //Introduction to Arrays.
+//Data structure.
 //Array can be defined as group of disimillar type of data elements.
+//Order matters
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";

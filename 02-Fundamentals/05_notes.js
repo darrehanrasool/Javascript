@@ -35,7 +35,7 @@ friends.push(23); // adding a number to show type checking
 console.log("Includes Steven:", friends.includes("Steven")); // true
 console.log("Includes Bob:", friends.includes("Bob")); // false
 console.log("Includes 23:", friends.includes(23)); // true
-// strict equality
+// Youstrict equality
 console.log("Includes 23:", friends.includes("23")); // false
 // Using includes() in condition
 if (friends.includes("Steven")) {

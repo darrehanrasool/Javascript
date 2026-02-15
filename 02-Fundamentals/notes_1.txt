@@ -1,3 +1,0 @@
-Math.floor(): it will return integer value.
-Math.round(): it will round value to the nearest number.
-Math.pow()  : it will raised power the value.
