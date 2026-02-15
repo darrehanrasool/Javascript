@@ -8,6 +8,7 @@ command + F          for quick replacement of words in vscode for testing.
 command + option + j chrome developer tools for web development.
 command + B          for vscode full screen.
 option  + up & down  arrow for moving lines.
+code settings  configure snipets 
 keyword is used only once,once the variable is created we can simply use the variable name.
 script is a peice of code that make the hml element funtional. 
 unhide h1 element.
