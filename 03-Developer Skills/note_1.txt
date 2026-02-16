@@ -1,0 +1,6 @@
+code -> settings -> configure snipets  -> new global snipets file.
+code -> settings -> open settings json -> file icon.
+For  -> lorem eipsome text write lorem -> hit the enter.
+sudo npm install live-server -g   
+sudo lsof -i -P -n | grep LISTEN
+debugger; for opening debugger tools

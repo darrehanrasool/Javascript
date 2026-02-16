@@ -27,11 +27,12 @@ const nameKey = "Name";
 console.log(jonasObject["first" + nameKey]);
 console.log(jonasObject["last" + nameKey]);
 //console.log(jonas.'last' + nameKey) Error !
+//prompt is inbuilt funtion in javascript that is used to take the input from the user return type string.
 const interestedIn = prompt(
   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends",
 );
 if (jonas.interestedIn) {
-  //this will result in undefined. Because we are accessing the computed property which did't exit yet!.
+  //this will result in undefined,because we are accessing the computed property which did't exit yet!.
   console.log(jonas.interestedIn);
 } else {
   console.log(

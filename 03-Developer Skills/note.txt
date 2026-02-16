@@ -1,2 +1,0 @@
-code -> settings -> configure snipets -> new global snipets file.
-code -> settings -> open settings json -> file icon

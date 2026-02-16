@@ -32,7 +32,7 @@ function calcAge1(birthYeah) {
   return 2037 - birthYeah;
 }
 // Function expression.
-// Named or annonymous funtion.
+// Named , Annonymous , Arrow Funtion
 // we can't call it before initialization.
 // Hoisting So before initialization → value is undefined.
 const calcAge2 = function (birthYeah) {
