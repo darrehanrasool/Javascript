@@ -1,14 +1,14 @@
-//expression will result an output automatically.
+// expression will result in output automatically.
 3 + 4;
 1991;
 true && false && !false;
-//statement will not result an output automatically.
+// statement will not result in output automatically.
 if (23 > 10) {
   const str = "23 is bigger";
 }
 const me = "Jonas";
 console.log(`I'm ${2037 - 1991} years old ${me}`);
-// The Conditional (Ternary) Operator
+// The Conditional (Ternary) Operator :
 // condition ? statement-1 : statement-2;
 const age = 23;
 // age > = 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
@@ -36,7 +36,6 @@ HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
 HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 
 GOOD LUCK 
 */
-//ternary operator
 const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(

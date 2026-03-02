@@ -1,4 +1,4 @@
-// Truthy and Falsy Values in javascript programing language.
+// Truthy and Falsy Values in javascript programing language:
 // Everthing is truthy except 5 falsy values: 0,'',undefined,null,false,NAN.
 // NaN is a falsey value of type number.
 //'' is a falsy value.

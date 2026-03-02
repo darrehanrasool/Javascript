@@ -1,5 +1,5 @@
 //"use strict";
-//here we are able to define variable without built in keywoards.
+//Here we are able to define variable without built in keywoards.
 //which means javascript is running in non-strict sloppy mode.
 let population = 10;
 language = "portuguese";
@@ -12,6 +12,7 @@ population++;
 console.log(population);
 console.log(population > 6);
 console.log(population < 33);
+// String concatination
 const description_1 =
   country +
   " is in " +
@@ -21,7 +22,7 @@ const description_1 =
   " million people speak " +
   language;
 console.log(description_1);
-// Template literals
+// Template literals or interpolation
 const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 if (population > 33) {
   console.log(`${country}'s population is above average`);

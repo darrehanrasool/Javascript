@@ -1,4 +1,4 @@
-<script>
+<script> 
 10 + 20 + 30;
 it will not be executed implicitly inside the website or ie console.
 console.log("for that we use explicitly console.log() it will log the string to  the output console");

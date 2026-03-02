@@ -29,5 +29,3 @@ const key = "age";
 console.log(user["key"]); //Accessing literal key "key" (does not exist).
 console.log(user[key]); //Accesses value inside variable key works fine .
 console.log(user.key); //Dot access works only with fixed property names.
-//Dot access cannot use variables.
-//Dot access is case-sensitive.

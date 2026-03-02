@@ -28,11 +28,11 @@ const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
 const year = 2037;
-//type  Coercion javascript will implicitly convert number into string so that it will get concatinated.
+// type  Coercion implicit conversion done by javascript
 const jonas =
   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(jonas);
-// via template literals, back tick `
+// via using template literals or interpolation back tick `
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(jonasNew);
 console.log(`Just a regular string...`);
@@ -56,6 +56,7 @@ if (age >= 18) {
   const yearsLeft = 18 - age;
   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 }
+
 birthYear_1 = 2012;
 let century;
 if (birthYear_1 <= 2000) {

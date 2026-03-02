@@ -12,7 +12,7 @@ function testVar() {
 }
 testVar(); // 10
 // let exists only inside the block { } where it is declared.
-// let block scoped
+// let block scoped.
 // we can reasign the value.
 function testLet() {
   if (true) {

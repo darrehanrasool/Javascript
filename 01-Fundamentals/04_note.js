@@ -4,7 +4,7 @@
 //  Primitives are passed by values.
 //  Primitive are immutable.
 //  As the name it self suggests Value it self can't change.
-//  Primitive data types in JavaScript:
+//  Primitive  data types in JavaScript:
 // 1)number    data type ie let x=2; let b=7.8;
 // 2)string    data type ie "rehan"
 // 3)bolean    data type ie true, false

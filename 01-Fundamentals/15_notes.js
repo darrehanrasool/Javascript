@@ -21,18 +21,9 @@ year = 1991;
 console.log(typeof year); // number
 console.log(typeof null); // object
 // there is a bug in javascript it should return null,it returns object,as null is not an object.
-// creating variables via different keywoards in javascript programing language ie let const var.
-// we can mutate the variable value later block scoped
-let age = 30;
-age = 31;
-// we can't mutate the variable value later block scoped
-const birthYear = 1991;
-// birthYear = 1990;
-// const job; it will throw error as const variable can't be empty.
-// we can mutate the variable value later funtion scoped
 var job = "programmer";
 job = "teacher";
-//here i am defining the variable without proper keywoard.
+//Here i am defining the variable without proper keywoard.
 //it means javascript is running in non-strict (sloppy mode).
 lastName = "Schmedtmann";
 console.log(lastName);
