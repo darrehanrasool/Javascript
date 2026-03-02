@@ -16,10 +16,10 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 // - Strings needs to contain day (index + 1)
 // - Add ... between elements and start and end of string
 // - Log string to console
+// - Good practice funtion should depend on its own local variables.
+
 const data_1 = [17, 21, 23];
 const data_2 = [12, 5, -5, 0, 4];
-console.log(`... ${data_1[0]}ºC ... ${data_1[1]}ºC ... ${data_1[2]}ºC ...`);
-//good practice funtion should depend on its own local variables.
 const printForecast = function (arr) {
   let str = '';
   for (let i = 0; i < arr.length; i++) {
@@ -27,6 +27,5 @@ const printForecast = function (arr) {
   }
   console.log('...' + str);
 };
-//debugger;
 printForecast(data_1);
 printForecast(data_2);

@@ -1,6 +1,7 @@
 // Coding Challenge #2 With AI Written by ChatGPT
 /*
-Let's say you're building a time tracking application for freelancers. At some point in building this app, you need a function that receives daily work hours for a certain week, and returns:
+Let's say you're building a time tracking application for freelancers. At some point in building this app, 
+you need a function that receives daily work hours for a certain week, and returns:
 1. Total hours worked
 2. Average daily hours
 3. The day with the most hours worked
@@ -18,8 +19,8 @@ function analyzeWorkWeek(dailyHours) {
     'Saturday',
     'Sunday',
   ];
-  // Validate that the input array has exactly 7 elements
-  //.toFixed() return type is string
+  // validate that the input array has exactly 7 elements
+  //.toFixed() builtin funtion return type string
   if (!Array.isArray(dailyHours) || dailyHours.length !== 7) {
     console.warn('Input must be an array of exactly 7 daily work hours.');
     return -1;

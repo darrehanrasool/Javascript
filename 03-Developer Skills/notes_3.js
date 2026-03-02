@@ -1,5 +1,5 @@
 // Debugging with the Console and Breakpoints
-// A) IDENTIFY C) FIX  B) FIND
+// (A) IDENTIFY  (B) FIND (C) FIX
 const measureKelvin = function () {
   const measurement = {
     type: 'temp',
@@ -22,8 +22,8 @@ const calcTempAmplitudeBug = function (t1, t2) {
   let min = 0;
   for (let i = 0; i < temps.length; i++) {
     const curTemp = temps[i];
+    debugger;
     if (typeof curTemp !== 'number') continue;
-
     if (curTemp > max) max = curTemp;
     if (curTemp < min) min = curTemp;
   }
