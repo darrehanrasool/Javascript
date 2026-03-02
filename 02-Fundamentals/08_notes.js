@@ -39,7 +39,7 @@ const jonas_ = {
   //   return 2037 - this.birthYeah;
   // }
   calcAge: function () {
-    // console.log(this); whole javascript object itself
+    //creates a new property age inside the javascript variable object dynamically and stores the value there.
     this.age = 2037 - this.birthYeah;
     return this.age;
   },
@@ -48,7 +48,6 @@ const jonas_ = {
   },
 };
 //computed member access [], member access .
-//creates a new property age inside the javascript object dynamically and stores the value there.
 console.log(jonas_["calcAge"]());
 console.log(jonas_.calcAge());
 console.log(jonas_);

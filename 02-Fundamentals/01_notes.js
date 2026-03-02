@@ -1,5 +1,5 @@
 "use strict";
-// we should keep our code dry ie reusablity !
+// we should keep our code dry ie reusablity
 function bmiCalculator(weight, height) {
   return Math.round(weight / Math.pow(height, 2));
   //return Math.floor(weight / height ** 2);

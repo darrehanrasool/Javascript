@@ -1,5 +1,7 @@
 'use strict';
+//other wise javascript will run in non-strict sloppy mode
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
+console.log(secretNumber);
 let score = 20;
 let highscore = 0;
 const displayMessage = function (message) {
@@ -7,7 +9,7 @@ const displayMessage = function (message) {
 };
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-  // typeof returns a string value
+  // typeof DOM returns a string value
   console.log(guess, typeof guess);
   // When there is no input
   if (!guess) {
@@ -16,7 +18,10 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
-    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('body').classList.add('win');
+    setTimeout(() => {
+      document.querySelector('body').classList.remove('win');
+    }, 2000);
     document.querySelector('.number').style.width = '30rem';
     if (score > highscore) {
       highscore = score;

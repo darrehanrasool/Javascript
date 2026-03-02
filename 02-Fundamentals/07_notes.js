@@ -1,7 +1,6 @@
 "use strict";
 // Introduction to Objects
 // Data structure.
-// Objects store memory reffrence not actual value in memory space
 // Keeping Related data together
 // Order does't matter
 // Dot vs Bracket Notation
@@ -26,13 +25,13 @@ console.log(jonasObject["firstName"]);
 const nameKey = "Name";
 console.log(jonasObject["first" + nameKey]);
 console.log(jonasObject["last" + nameKey]);
-//console.log(jonas.'last' + nameKey) Error !
+//console.log(jonas.'last' + nameKey) Error
 //prompt is inbuilt funtion in javascript that is used to take the input from the user return type string.
 const interestedIn = prompt(
   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends",
 );
+//this will result in undefined,because we are accessing the computed property which did't exit yet.
 if (jonas.interestedIn) {
-  //this will result in undefined,because we are accessing the computed property which did't exit yet!.
   console.log(jonas.interestedIn);
 } else {
   console.log(

@@ -34,7 +34,7 @@ console.log(jonas[5], typeof jonas[5]); //bolean
 for (let i = 0; i < jonas.length; i++) {
   console.log(jonas[i], typeof jonas[i]);
   // Filling types array
-  // types[i] = typeof jonas[i];
+  // ts = typeof jonas[i];
   types.push(typeof jonas[i]);
 }
 console.log(types);
