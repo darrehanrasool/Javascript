@@ -1,5 +1,5 @@
 'use strict';
-// Selecting elements
+// Selecting Elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.getElementById('score--0');
@@ -11,9 +11,10 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
+// Global Variables
 let scores, currentScore, activePlayer, playing;
 
-// Starting conditions
+// Starting Conditions
 const init = function () {
   scores = [0, 0];
   currentScore = 0;
@@ -41,16 +42,14 @@ const switchPlayer = function () {
   player1El.classList.toggle('player--active');
 };
 
-// Rolling dice functionality
+// Rolling Dice
 btnRoll.addEventListener('click', function () {
   if (playing) {
     // 1. Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
-
     // 2. Display dice
     diceEl.classList.remove('hidden');
     diceEl.src = `dice-${dice}.png`;
-
     // 3. Check for rolled 1
     if (dice !== 1) {
       // Add dice to current score
@@ -68,8 +67,6 @@ btnHold.addEventListener('click', function () {
   if (playing) {
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
-    // scores[1] = scores[1] + currentScore
-
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
