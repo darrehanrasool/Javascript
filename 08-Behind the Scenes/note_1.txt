@@ -1,0 +1,13 @@
+High Level          : Actually we dont have to worry about complex memory management system.
+Garbage Collection  : Removes un used objects from the memory space.
+Interpreted         : Browser will act as a interpreter .
+Multiparadigm       : we can use diffrent style of programing ie monolithic,imperative,declarative ui programing.
+                      procedural ,object oriented , funtional programing.
+Prototype Based     : It's mainly based on objects.
+Dynamic             : We dont need to explicitly provide the type of data type the interpreter will infer the type of data 
+                      at runtime depends upon the type of value assigned to the variable.
+Event Loop          : Event Loop keeps on running as long as there are event listeners registered. Event Loop waits when the 
+                      tasks finishes and call stack is free. it runs the Event callback (concurency model). 
+Single Threaded     : Nodejs Executes single Threaded javascript ie main Thread.javascript runs in single thread ie it can 
+                      do only one thing at a particular instant of time.
+First Class Funtion : Funtions are treated as simply as regular variables. we can pass them as variables.
