@@ -1,4 +1,4 @@
-// Scoping in Practice
+// Scoping in Practice Global scope Funtion Scope Block Scope
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
   function printAge() {
@@ -7,15 +7,14 @@ function calcAge(birthYear) {
 
     if (birthYear >= 1981 && birthYear <= 1996) {
       var millenial = true;
-      // Creating NEW variable with same name as outer scope's variable
+      // Creating new variable with same name.
       const firstName = 'Steven';
-
-      // Reasssigning outer scope's variable
-      output = 'NEW OUTPUT!';
+      // Reassigning outer scope's variable.
+      output = 'Reassingning value';
 
       const str = `Oh, and you're a millenial, ${firstName}`;
       console.log(str);
-
+      // Funtion Block scope in strict mode
       function add(a, b) {
         return a + b;
       }
@@ -26,10 +25,8 @@ function calcAge(birthYear) {
     console.log(output);
   }
   printAge();
-
   return age;
 }
-
 const firstName = 'Jonas';
 calcAge(1991);
 // console.log(age);

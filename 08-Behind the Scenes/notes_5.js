@@ -23,18 +23,18 @@ const jessica = {
   age: 27,
   familiy: ['Alice', 'Bob'],
 };
-// Shallow copy
+// Shallow Copy  Same Array Reffrence.
 const jessicaCopy = { ...jessica };
 jessicaCopy.lastName = 'Davis';
+jessicaCopy.familiy.push('Mary');
+jessicaCopy.familiy.push('John');
 
-// jessicaCopy.familiy.push('Mary');
-// jessicaCopy.familiy.push('John');
+console.log('Before:', jessica);
+console.log('After:', jessicaCopy);
 
-// console.log('Before:', jessica);
-// console.log('After:', jessicaCopy);
-
-// Deep copy/clone
+// Deep Copy/Clone Diffrent Array Reffrence.
 const jessicaClone = structuredClone(jessica);
+jessicaClone.lastName = 'Rehan';
 jessicaClone.familiy.push('Mary');
 jessicaClone.familiy.push('John');
 

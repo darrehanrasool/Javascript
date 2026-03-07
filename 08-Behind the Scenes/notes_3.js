@@ -1,14 +1,18 @@
-// The this Keyword in Practice
+// The  this Keywoard in Practice
+// This Keywoard is reffrence to the current object.
 console.log(this);
 
 const calcAge = function (birthYear) {
   console.log(2037 - birthYear);
+  // For Regular funtion this keywoard is undefined.
   console.log(this);
 };
 calcAge(1991);
 
 const calcAgeArrow = birthYear => {
   console.log(2037 - birthYear);
+  // For Arrow funtion this keywoard is window object.
+  // Arrow funtion useses lexical this keywoard.
   console.log(this);
 };
 calcAgeArrow(1980);
@@ -25,7 +29,6 @@ jonas.calcAge();
 const matilda = {
   year: 2017,
 };
-
 matilda.calcAge = jonas.calcAge;
 matilda.calcAge();
 

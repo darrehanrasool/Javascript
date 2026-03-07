@@ -11,3 +11,10 @@ Event Loop          : Event Loop keeps on running as long as there are event lis
 Single Threaded     : Nodejs Executes single Threaded javascript ie main Thread.javascript runs in single thread ie it can 
                       do only one thing at a particular instant of time.
 First Class Funtion : Funtions are treated as simply as regular variables. we can pass them as variables.
+Lexical Scoping     : Inner scope can access the varaiable of outer scope,outer scope can't access the variable of inner scope
+                      sibling scope can't access the variables of each other.
+Types of scopes     : Global Scope , Funtion Scope ie var , Block Scope ie let,const,funtion().
+Hoisting            : Javascript internally use the concept of hoisting.in case of funtion declaration value before 
+                      initialisation is defined . in case of funtion expression value before initialisation is undefined.
+Temporal Dead Zone  : Accessing variables before declaration and initialisation Results in Reffrence error.
+Property            : Variables created via var keywoard creates Property inside the window() Object.

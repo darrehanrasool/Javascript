@@ -17,15 +17,12 @@ console.log(addArrow);
 function addDecl(a, b) {
   return a + b;
 }
-
 const addExpr = function (a, b) {
   return a + b;
 };
-
 var addArrow = (a, b) => a + b;
-
 // Example
-console.log(undefined);
+console.log(numProducts);
 if (!numProducts) deleteShoppingCart();
 
 var numProducts = 10;
@@ -33,7 +30,6 @@ var numProducts = 10;
 function deleteShoppingCart() {
   console.log('All products deleted!');
 }
-
 var x = 1;
 let y = 2;
 const z = 3;

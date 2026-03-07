@@ -1,28 +1,27 @@
 // Regular Functions vs. Arrow Functions
 // var firstName = 'Matilda';
-
 const jonas = {
   firstName: 'Jonas',
   year: 1991,
   calcAge: function () {
     // console.log(this);
     console.log(2037 - this.year);
-
     // Solution 1
-    // const self = this; // self or that
-    // const isMillenial = function () {
-    //   console.log(self);
-    //   console.log(self.year >= 1981 && self.year <= 1996);
-    // };
-
+    // For Regular Funtion this keywoard is undefined.                                 .
+    const self = this;
+    const isMillenial_ = function () {
+      console.log(self);
+      console.log(self.year >= 1981 && self.year <= 1996);
+    };
+    isMillenial_();
     // Solution 2
+    // For Arrow Funtion this keywoard is window() object.
     const isMillenial = () => {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
     isMillenial();
   },
-
   greet: () => {
     console.log(this);
     console.log(`Hey ${this.firstName}`);
