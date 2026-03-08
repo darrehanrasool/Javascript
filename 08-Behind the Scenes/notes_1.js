@@ -14,7 +14,7 @@ function calcAge(birthYear) {
 
       const str = `Oh, and you're a millenial, ${firstName}`;
       console.log(str);
-      // Funtion Block scope in strict mode
+      // Funtion Block Scope in Strict Mode
       function add(a, b) {
         return a + b;
       }

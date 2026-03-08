@@ -15,13 +15,18 @@ const jonas = {
     };
     isMillenial_();
     // Solution 2
-    // For Arrow Funtion this keywoard is window() object.
+    // For Arrow funtion this keywoard is window() object.
+    // Arrow funtion did't have its own this keywoard.
+    // Arrow funtion useses lexical this keywoard.
+    // Here the scope is funtion()
     const isMillenial = () => {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
     isMillenial();
   },
+  // Here the scope becomes global().
+  // Javascript object is not a scope.
   greet: () => {
     console.log(this);
     console.log(`Hey ${this.firstName}`);
@@ -30,7 +35,7 @@ const jonas = {
 jonas.greet();
 jonas.calcAge();
 
-// arguments keyword
+// arguments keyword in javascript
 const addExpr = function (a, b) {
   console.log(arguments);
   return a + b;
