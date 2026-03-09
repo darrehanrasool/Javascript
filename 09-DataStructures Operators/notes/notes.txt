@@ -1,0 +1,8 @@
+Algorithm       : algorithm     can be defined as any step by step procedure to solve any computational task.
+Datastructure   : datastructure can be defined as How well we organise data inside the main memory.
+Built in        : weakset,weakmap.
+Non Builtin     : stack,queue,linked list,tree,hash table.
+Iterables       : array,string,set,map.
+Non Iterable    : object
+Spread operator : Right side on equality.
+Rest   operator : Left  side on equality.
