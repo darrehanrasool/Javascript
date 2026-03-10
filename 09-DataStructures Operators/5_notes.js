@@ -12,7 +12,6 @@ console.log(guestCorrect);
 // Logical Assignment Operators
 const rest1 = {
   name: 'Capri',
-  numGuests: 20,
   numGuests: 0,
 };
 

@@ -43,9 +43,9 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
-// SPREAD operator,  because on   RIGHT side of  =
+// Spread operator : Right side on equality.
 const arr = [1, 2, ...[3, 4]];
-// REST   operator,  because on  LEFT   side of  =
+// Rest   operator : Left  side on equality.
 const [a, b, ...others] = [1, 2, 3, 4, 5];
 console.log(a, b, others);
 

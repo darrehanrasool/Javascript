@@ -67,8 +67,8 @@ console.log(menu, starters);
 let a = 111;
 let b = 999;
 const obj = { a: 23, b: 7, c: 14 };
-//without () it will treat it as codeblock.
-//we can't assign value to codeblock.
+// without () it will treat it as codeblock.
+// we can't assign value to codeblock.
 ({ a, b } = obj);
 console.log(a, b);
 

@@ -54,12 +54,11 @@ console.log(newMenu);
 
 // Copy array
 const mainMenuCopy = [...restaurant.mainMenu];
-
-// Join 2 arrays
+// Join array
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
-// Iterables: arrays, strings, maps, sets. NOT objects
+// Iterables: arrays, strings, maps, sets, objects are not iterables
 const str = 'Jonas';
 const letters = [...str, ' ', 'S'];
 console.log(letters);
@@ -81,4 +80,3 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = 'Ristorante Roma';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
-``;

@@ -57,11 +57,10 @@ console.log(guests1); //10
 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2); //10
-
+// use any data type, return any data type, short-circuiting
 console.log('---- AND ----');
 console.log(0 && 'Jonas');
 console.log(7 && 'Jonas');
-
 console.log('Hello' && 23 && null && 'jonas');
 
 // Practical example

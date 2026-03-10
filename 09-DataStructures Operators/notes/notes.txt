@@ -4,5 +4,7 @@ Built in        : weakset,weakmap.
 Non Builtin     : stack,queue,linked list,tree,hash table.
 Iterables       : array,string,set,map.
 Non Iterable    : object
-Spread operator : Right side on equality.
-Rest   operator : Left  side on equality.
+Spread operator : right side on equality.
+Rest   operator : left  side on equality.
+Array           : array.enteries();
+Object          : object.enteries(name);
