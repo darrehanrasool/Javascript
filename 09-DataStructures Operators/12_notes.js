@@ -1,4 +1,4 @@
-// Sets can be defined as group of unique element.
+// Set can be defined as group of similar type of  unique element.
 const ordersSet = new Set([
   'Pasta',
   'Pizza',

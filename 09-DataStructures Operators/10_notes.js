@@ -19,7 +19,7 @@ openingHours = {
 const keys = Object.keys(openingHours);
 console.log(keys);
 let str_1 = `keys :`;
-for (key of keys) {
+for (let key of keys) {
   str_1 += ` ${key}`;
 }
 console.log(str_1);
@@ -28,7 +28,7 @@ console.log(str_1);
 const values = Object.values(openingHours);
 console.log(values);
 let str_2 = `values :`;
-for ({ open, close } of values) {
+for (let { open, close } of values) {
   str_2 += `${open}:${close} ,`;
 }
 console.log(str_2);
@@ -37,7 +37,7 @@ console.log(str_2);
 const entries = Object.entries(openingHours);
 console.log(entries);
 let str_3;
-for ([day, { open, close }] of entries) {
+for (let [day, { open, close }] of entries) {
   str_3 = ` on ${day} we open at ${open} and we close at ${close}`;
   console.log(str_3);
 }

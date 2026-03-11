@@ -58,7 +58,7 @@ const mainMenuCopy = [...restaurant.mainMenu];
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
 
-// Iterables: arrays, strings, maps, sets, objects are not iterables
+// Iterables: arrays, strings, maps, sets,       objects are not iterables
 const str = 'Jonas';
 const letters = [...str, ' ', 'S'];
 console.log(letters);

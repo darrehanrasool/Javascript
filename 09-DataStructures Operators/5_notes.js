@@ -4,6 +4,7 @@ let restaurant = {};
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;
 console.log(guests);
+
 // via using nullish coalescing.
 // there exist only two nullish value null and undefined.
 const guestCorrect = restaurant.numGuests ?? 10;

@@ -1,5 +1,5 @@
-'use strict';
 // ES6 module syntax for object literals and methods()
+'use strict';
 const weekdays = ['sun', 'mon', 'tue', 'wen', 'thur', 'fri', 'sat'];
 openingHours = {
   [weekdays[4]]: {
@@ -21,13 +21,13 @@ const restaurant = {
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  // ES6 module syntax for object literals
+  // ES6 module syntax for object literals.
   // openingHours: openingHours,
   openingHours,
   order: function (starterMenuIndex, mainMenuIndex) {
     return [this.starterMenu[starterMenuIndex], this.mainMenu[mainMenuIndex]];
   },
-  // normal methods() with funtion keywoard
+  // Normal methods() with funtion keywoard.
   orderDelivery: function ({
     starterIndex = 1,
     mainIndex = 0,

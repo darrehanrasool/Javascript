@@ -1,5 +1,5 @@
 // we can use for of loop to iterate through the array.
-// we can use break and continue keywoard.
+// we can use break and continue keywoard in for of loop.
 'use strict';
 const restaurant = {
   name: 'Classico Italiano',
@@ -26,6 +26,7 @@ const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 for (const item of menu) {
   console.log(item);
 }
+// i will get access to the id and element
 console.log([...menu.entries()]);
 for (const item of menu.entries()) {
   console.log(item);

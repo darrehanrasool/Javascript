@@ -31,9 +31,11 @@ console.log('Difference italian', uniqueItalianFoods);
 // elements present in one set but not in another set
 const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
 console.log('Difference mexican', uniqueMexicanFoods);
-// remove elements present in both sets
+// remove commen elements present in both sets
 const uniqueItalianAndMexicanFoods =
   italianFoods.symmetricDifference(mexicanFoods);
 console.log(uniqueItalianAndMexicanFoods);
 
+console.log(italianFoods.isSubsetOf(mexicanFoods));
+console.log(italianFoods.isSupersetOf(mexicanFoods));
 console.log(italianFoods.isDisjointFrom(mexicanFoods));
