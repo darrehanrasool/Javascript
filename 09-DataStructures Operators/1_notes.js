@@ -27,7 +27,7 @@ const restaurant = {
     starterIndex = 1,
     mainIndex = 0,
     time = '20:00',
-    address,
+    address = 'kashmere',
   }) {
     console.log(
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`,

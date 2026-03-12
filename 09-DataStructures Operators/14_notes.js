@@ -1,7 +1,7 @@
 'use strict';
 // Maps    : keys can be of any type.
 // Objects : keys can be only strings.
-// returns the updated map()
+// returns the updated map().
 const rest = new Map();
 rest
   .set(1, 'Firenze, Italy')

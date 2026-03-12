@@ -10,9 +10,10 @@ console.log('B737'[0]);
 console.log(airline.length);
 console.log('B737'.length);
 
-console.log(airline.indexOf('r'));
-console.log(airline.lastIndexOf('r'));
-console.log(airline.indexOf('portugal'));
+console.log(airline.indexOf('r')); // first accurance
+console.log(airline.lastIndexOf('r')); // last accurance
+console.log(airline.indexOf('Portugal')); // 8
+console.log(airline.indexOf('portugal')); // -1
 
 console.log(airline.slice(4));
 console.log(airline.slice(4, 7));
@@ -33,8 +34,9 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
-
-console.log(new String('jonas'));
-console.log(typeof new String('jonas'));
-
-console.log(typeof new String('jonas').slice(1));
+// When we call methods on string primitive.
+// Javascript will internally covert it into object ie Boxing.
+// Each method will return string primitive.
+console.log(new String('jonas')); // object
+console.log(typeof new String('jonas')); // object
+console.log(typeof new String('jonas').slice(1)); // string

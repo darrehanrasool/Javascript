@@ -33,7 +33,7 @@ const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 for (const day of days) {
   //computed member access operator
   const open = restaurant.openingHours[day]?.open ?? 'closed';
-  console.log(`On ${day}, we open at ${open}`);
+  console.log(`On ${day},  :  ${open}`);
 }
 // Methods
 console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
