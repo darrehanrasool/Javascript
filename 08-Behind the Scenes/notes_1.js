@@ -1,3 +1,4 @@
+'use strict';
 // Scoping in Practice Global scope Funtion Scope Block Scope
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
@@ -19,9 +20,9 @@ function calcAge(birthYear) {
         return a + b;
       }
     }
-    // console.log(str);
-    console.log(millenial);
-    // console.log(add(2, 3));
+    console.log(str); //block scope
+    console.log(millenial); //funtion scope
+    console.log(add(2, 3)); //block scope
     console.log(output);
   }
   printAge();

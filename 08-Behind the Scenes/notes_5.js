@@ -23,8 +23,8 @@ const jessica = {
   age: 27,
   familiy: ['Alice', 'Bob'],
 };
-// Shallow Copy via using spread operator same array Reffrence.
 
+// Shallow Copy via using spread operator same array Reffrence.
 const jessicaCopy = { ...jessica };
 jessicaCopy.lastName = 'Davis';
 jessicaCopy.familiy.push('Mary');

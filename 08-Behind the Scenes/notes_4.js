@@ -42,7 +42,7 @@ const addExpr = function (a, b) {
 };
 addExpr(2, 5);
 addExpr(2, 5, 8, 12);
-
+// arrow funtion did't have arguments
 var addArrow = (a, b) => {
   console.log(arguments);
   return a + b;
