@@ -1,6 +1,6 @@
 // Normal Funtion Call ie funtion declaration
 const runOnce = function () {
-  console.log('This will never run again 1');
+  console.log('we can run it again  1');
 };
 runOnce();
 
@@ -13,7 +13,7 @@ runOnce();
 
 // Immediately Invoked Function Expressions (IIFE)
 (() => {
-  console.log('This will also never run again 3');
+  console.log('This will  never run again 3');
   const isPrivate_2 = 23;
 })();
 //console.log(isPrivate_2); // not defined

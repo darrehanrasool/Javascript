@@ -6,9 +6,6 @@ const upperFirstWord = function (str) {
   const [first, ...others] = str.split(' ');
   return [first.toUpperCase(), ...others].join(' ');
 };
-// Higher order function  First class funtion.
-// Here we use the concept of abstraction.
-// Hiding  funtion call implementation details.
 // Every Funtion have name property
 const transformer = function (str, fn) {
   console.log(`Original string: ${str}`);

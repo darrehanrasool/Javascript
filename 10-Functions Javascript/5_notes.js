@@ -23,8 +23,8 @@ const swiss = {
   iataCode: 'LX',
   bookings: [],
 };
-
 const book = lufthansa.book;
+
 // simply returns a funtion in which this keywoard is pointing towards passed object.
 const bookLH = book.bind(lufthansa);
 const bookEW = book.bind(eurowings);
@@ -56,12 +56,13 @@ document
 const addTax = (rate, value) => value + value * rate;
 console.log(addTax(0.1, 200));
 
-//addVAT = value => value + value * 0.23;
+const same = (value) => value + value * 0.23;
 // fix rate to 23 % always
 const addVAT = addTax.bind(null, 0.23);
 console.log(addVAT(100));
 console.log(addVAT(23));
 
+// First class funtion
 const addTaxRate = function (rate) {
   return function (value) {
     return value + value * rate;

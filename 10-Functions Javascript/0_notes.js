@@ -22,8 +22,7 @@ const createBooking = function (
 };
 
 createBooking('LH123');
-createBooking('LH123', 2, 800);
 createBooking('LH123', 2);
-createBooking('LH123', 5);
-// it allows second parameter to take default value by using undefined
+createBooking('LH123', 2, 800);
 createBooking('LH123', undefined, 1000);
+// it allows second parameter to take default value by using undefined
