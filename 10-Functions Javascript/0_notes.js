@@ -11,7 +11,6 @@ const createBooking = function (
   // flightNum =  flighthNum || 'LH123',
   // numPassengers = numPassengers || 1;
   // price = price || 199;
-
   // ES6 module syntax for object literals
   const booking = {
     flightNum,
