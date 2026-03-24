@@ -22,7 +22,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
   const dogs = dogsJuliaCorrected.concat(dogsKate);
   console.log(dogs);
 
-  dogs.forEach(function (dog, i) {
+  dogs.forEach(function (dog, i, dogs) {
     if (dog >= 3) {
       console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`);
     } else {
