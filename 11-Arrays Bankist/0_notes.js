@@ -13,15 +13,14 @@ arr.splice(-1);
 console.log(arr);
 arr.splice(1, 2);
 console.log(arr);
-// REVERSE
+// REVERSE it will mutate the original array.
 arr = ['a', 'b', 'c', 'd', 'e'];
 const arr2 = ['j', 'i', 'h', 'g', 'f'];
-// REVERSE it will mutate the original array.
 console.log(arr2.reverse());
 console.log(arr2);
-// CONCAT
+// CONCAT it will not mutate the original array.
 const letters = arr.concat(arr2);
 console.log(letters);
 console.log([...arr, ...arr2]);
-// JOIN
+// JOIN it will not mutate the original array.
 console.log(letters.join(' - '));
