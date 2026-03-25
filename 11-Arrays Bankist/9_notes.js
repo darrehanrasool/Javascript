@@ -1,14 +1,15 @@
 // The Magic of Chaining Methods
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const eurToUsd = 1.1;
-console.log(movements);
 
-// PIPELINE
 const totalDepositsUSD = movements
-  .filter((mov) => mov > 0)
+  .filter((mov) => {
+    return mov > 0;
+  })
   .map((mov, i, arr) => {
-    // console.log(arr);
     return mov * eurToUsd;
   })
-  // .map(mov => mov * eurToUsd)
-  .reduce((acc, mov) => acc + mov, 0);
+  .reduce((acc, mov, i, arr) => {
+    return acc + mov;
+  }, 0);
 console.log(totalDepositsUSD);
