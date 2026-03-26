@@ -1,4 +1,4 @@
-// Simple Array Methods
+// slice splice reverse concat jion
 let arr = ['a', 'b', 'c', 'd', 'e'];
 // SLICE it will not mutate the original array.
 console.log(arr.slice(2));
