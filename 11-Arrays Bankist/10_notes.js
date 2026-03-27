@@ -16,7 +16,7 @@ const calcAverageHumanAge = (ages) => {
       return age >= 18;
     })
     .reduce((acc, age, i, arr) => {
-      return acc + age / arr.length;
+      return (acc + age) / arr.length;
     }, 0);
 };
 

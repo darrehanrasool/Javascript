@@ -2,7 +2,7 @@
 // Nexvault
 // Data
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'Dar  Rehan Rasool',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
   interestRate: 1.2,
   pin: 1111,
@@ -117,7 +117,7 @@ const calcDisplaySummary = function (acc) {
     .filter((int, i, arr) => {
       return int >= 1;
     })
-    .reduce((acc, int) => {
+    .reduce((acc, int, i, arr) => {
       return acc + int;
     }, 0);
   labelSumInterest.textContent = `${interest}€`;
@@ -137,10 +137,8 @@ createUsernames(accounts);
 const updateUI = function (acc) {
   // Display movements
   displayMovements(acc.movements);
-
   // Display balance
   calcDisplayBalance(acc);
-
   // Display summary
   calcDisplaySummary(acc);
 };
@@ -159,16 +157,12 @@ btnLogin.addEventListener('click', function (e) {
       currentAccount.owner.split(' ')[0]
     }`;
     containerApp.style.opacity = 1;
-
-    // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
-
-    // Update UI
     updateUI(currentAccount);
   }
 });
-
+// Prevents the browser default behaviour
 btnTransfer.addEventListener('click', function (e) {
   e.preventDefault();
   const amount = Number(inputTransferAmount.value);
@@ -176,40 +170,34 @@ btnTransfer.addEventListener('click', function (e) {
     (acc) => acc.username === inputTransferTo.value,
   );
   inputTransferAmount.value = inputTransferTo.value = '';
-
   if (
     amount > 0 &&
     receiverAcc &&
     currentAccount.balance >= amount &&
     receiverAcc?.username !== currentAccount.username
   ) {
-    // Doing the transfer
     currentAccount.movements.push(-amount);
     receiverAcc.movements.push(amount);
-
-    // Update UI
+    I;
     updateUI(currentAccount);
   }
 });
 
+// Prevents the browser default behaviour
 btnLoan.addEventListener('click', function (e) {
   e.preventDefault();
-
   const amount = Number(inputLoanAmount.value);
-
   if (
     amount > 0 &&
     currentAccount.movements.some((mov) => mov >= amount * 0.1)
   ) {
-    // Add movement
     currentAccount.movements.push(amount);
-
-    // Update UI
     updateUI(currentAccount);
   }
   inputLoanAmount.value = '';
 });
 
+// Prevents the browser default behaviour
 btnClose.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -220,19 +208,13 @@ btnClose.addEventListener('click', function (e) {
     const index = accounts.findIndex(
       (acc) => acc.username === currentAccount.username,
     );
-    console.log(index);
-    // .indexOf(23)
-
     // Delete account
     accounts.splice(index, 1);
-
-    // Hide UI
     containerApp.style.opacity = 0;
   }
 
   inputCloseUsername.value = inputClosePin.value = '';
 });
-
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
