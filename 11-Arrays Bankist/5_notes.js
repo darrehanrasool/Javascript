@@ -9,6 +9,7 @@ const movementsUSD_2 = movements.map((mov) => {
   return mov * eurToUsd;
 });
 
+console.log(movements);
 console.log(movementsUSD_1);
 console.log(movementsUSD_2);
 

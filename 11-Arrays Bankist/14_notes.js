@@ -9,9 +9,10 @@ YOUR TASKS:
 5. Many dog breeds like to swim. What other activities do these dogs like? Store all the OTHER activities these breeds like to do, in a unique array called "swimmingAdjacent".
 6. Do all the breeds have an average weight of 10kg or more? Log to the console whether "true" or "false".
 7. Are there any breeds that are "active"? "Active" means that the dog has 3 or more activities. Log to the console whether "true" or "false".
-8. What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
+BONUS: What's the average weight of the heaviest breed that likes to fetch? HINT: Use the "Math.max" method along with the ... operator.
 TEST DATA:
 */
+
 const breeds = [
   {
     breed: 'German Shepherd',
@@ -49,6 +50,7 @@ const breeds = [
     activities: ['agility', 'fetch'],
   },
 ];
+
 // 1.
 const huskyWeight = breeds.find(
   (breed) => breed.breed === 'Husky',
@@ -61,12 +63,16 @@ const dogBothActivities = breeds.find(
     breed.activities.includes('fetch') && breed.activities.includes('running'),
 ).breed;
 console.log(dogBothActivities);
+
 // 3.
+// const allActivities = breeds.map(breed => breed.activities).flat();
 const allActivities = breeds.flatMap((breed) => breed.activities);
 console.log(allActivities);
+
 // 4.
 const uniqueActivities = [...new Set(allActivities)];
 console.log(uniqueActivities);
+
 // 5.
 const swimmingAdjacent = [
   ...new Set(
@@ -77,14 +83,18 @@ const swimmingAdjacent = [
   ),
 ];
 console.log(swimmingAdjacent);
+
 // 6.
 console.log(breeds.every((breed) => breed.averageWeight > 10));
+
 // 7.
 console.log(breeds.some((breed) => breed.activities.length >= 3));
-// 8.
+
+// BONUS
 const fetchWeights = breeds
   .filter((breed) => breed.activities.includes('fetch'))
   .map((breed) => breed.averageWeight);
 const heaviestFetchBreed = Math.max(...fetchWeights);
+
 console.log(fetchWeights);
 console.log(heaviestFetchBreed);

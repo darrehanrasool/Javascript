@@ -33,21 +33,20 @@ const account4 = {
 };
 const accounts = [account1, account2, account3, account4];
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-// Includes checking by equality any element.
-const value_1 = movements.includes(-130);
-// Some     checking by condition any element.
-const value_2 = movements.some((mov) => mov === -130);
-// Some     checking by condition any element.
-const value_3 = movements.some((mov) => mov > 0);
-console.log('includes', value_1);
-console.log('some    ', value_2);
-console.log('some    ', value_3);
+console.log(movements);
 
-// Every checking by condition every element.
-const value_4 = movements.every((mov) => mov > 0);
-const value_5 = account4.movements.every((mov) => mov > 0);
-console.log('every', value_4);
-console.log('every', value_5);
+// Inludes
+console.log(movements.includes(-130));
+
+// Some
+console.log(movements.some((mov) => mov === -130));
+
+const anyDeposits = movements.some((mov) => mov > 0);
+console.log(anyDeposits);
+
+// Every
+console.log(movements.every((mov) => mov > 0));
+console.log(account4.movements.every((mov) => mov > 0));
 
 // Separate callback
 const deposit = (mov) => mov > 0;

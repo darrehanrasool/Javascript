@@ -1,51 +1,19 @@
 // flat and flatMap
-'use strict';
-const account1 = {
-  owner: 'Jonas Schmedtmann',
-  movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
-  interestRate: 1.2,
-  pin: 1111,
-  type: 'premium',
-};
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+console.log(arr.flat());
 
-const account2 = {
-  owner: 'Jessica Davis',
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-  interestRate: 1.5,
-  pin: 2222,
-  type: 'standard',
-};
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log(arrDeep.flat(2));
 
-const account3 = {
-  owner: 'Steven Thomas Williams',
-  movements: [200, -200, 340, -300, -20, 50, 400, -460],
-  interestRate: 0.7,
-  pin: 3333,
-  type: 'premium',
-};
-
-const account4 = {
-  owner: 'Sarah Smith',
-  movements: [430, 1000, 700, 50, 90],
-  interestRate: 1,
-  pin: 4444,
-  type: 'basic',
-};
-const accounts = [account1, account2, account3, account4];
-const arr_1 = [[1, 2, 3], [4, 5, 6], 7, 8];
-const value_1 = arr_1.flat(1);
-const arr_2 = [[[1, 2], 3], [4, [5, 6]], 7, 8];
-const value_2 = arr_2.flat(2);
-console.log(value_1);
-console.log(value_2);
-// flat  any level deep.
-const overalBalance_1 = accounts
+// flat
+const overalBalance = accounts
   .map((acc) => acc.movements)
   .flat()
-  .reduce((acc, mov, i, arr) => acc + mov, 0);
-// flatMap one level deep.
-const overalBalance_2 = accounts
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalance);
+
+// flatMap
+const overalBalance2 = accounts
   .flatMap((acc) => acc.movements)
   .reduce((acc, mov) => acc + mov, 0);
-console.log(overalBalance_1);
-console.log(overalBalance_2);
+console.log(overalBalance2);

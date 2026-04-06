@@ -1,4 +1,5 @@
-// forEach With Maps 
+// forEach With Maps and Sets
+// Map
 const currenciesMap = new Map([
   ['USD', 'United States dollar'],
   ['EUR', 'Euro'],
@@ -9,7 +10,8 @@ currenciesMap.forEach(function (value, key, map) {
   console.log(map);
   console.log(`${key}: ${value}`);
 });
-// forEach With  Set
+
+// Set
 const currenciesSet = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
 console.log(currenciesSet);
 currenciesSet.forEach(function (value, next, set) {

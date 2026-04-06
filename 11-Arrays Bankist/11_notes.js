@@ -41,16 +41,11 @@ const firstWithdrawal = movements.find((mov) => {
 console.log(firstWithdrawal);
 
 // Return type first element that satisfies the condition.
-const account_1 = accounts.find((acc) => {
+const account = accounts.find((acc) => {
   return acc.owner === 'Jessica Davis';
 });
+console.log(account);
 
-// Return type first element index that satisfies the condition.
-const account_2 = accounts.findIndex((acc) => {
-  return acc.owner === 'Jessica Davis';
-})
-console.log(account_1);
-console.log(account_2);
 // Return type last element that satisfies the condition.
 const lastWithdrawal = movements.findLast((mov) => {
   return mov < 0;
@@ -63,6 +58,7 @@ const latestLargeMovementIndex = movements.findLastIndex((mov) => {
 });
 console.log(latestLargeMovementIndex);
 console.log(
-  `Your latest large movement was ${movements.length - latestLargeMovementIndex
+  `Your latest large movement was ${
+    movements.length - latestLargeMovementIndex
   } movements ago`,
 );
