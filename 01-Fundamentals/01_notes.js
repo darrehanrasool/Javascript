@@ -1,5 +1,5 @@
 //"use strict";
-//Here we are able to define variable without built in keywoards buddy.
+//Here we are able to define variable without built in keywoards .
 //which means javascript is running in non-strict sloppy mode.
 let population = 10;
 language = "portuguese";
