@@ -1,7 +1,7 @@
 //"use strict";
 //Here we are able to define variable without built in keywoards .
 //which means javascript is running in non-strict sloppy mode.
-// Error Pronecl
+// Error Prone
 let population = 10;
 language = "portuguese";
 const country = "Portugal";
