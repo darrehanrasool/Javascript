@@ -1,6 +1,7 @@
 //"use strict";
 //Here we are able to define variable without built in keywoards .
 //which means javascript is running in non-strict sloppy mode.
+// Error prone
 let population = 10;
 language = "portuguese";
 const country = "Portugal";
