@@ -6,7 +6,7 @@ console.log(district);
 console.log(population);
 let isIsland = false;
 let language;
-//typeof returns string in javascript.
+//typeof returns string in javascript programing
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
