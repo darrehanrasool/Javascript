@@ -18,5 +18,5 @@ p  chagnes text to "world".
 Holding next line in chrome developer tools console shift + return
 chrome developer tools , source , >> , snipets , index.js 
 for clearing chrome developer tool console hit the command + k.
-stylistic quote will result error in javascript.
+stylistic quote will result error in javascript programing language.
 For Hardcore Refresh of web page controle right click on refresh bar then chose Hard core Refresh.
